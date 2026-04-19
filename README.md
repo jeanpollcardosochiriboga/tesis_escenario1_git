@@ -34,33 +34,29 @@ docker-compose logs -f
 
 El dashboard queda disponible en `http://localhost:1881`.
 
-## Configurar credenciales del router
+## Configurar para una nueva instalación
 
-> **Importante:** Los valores de IP del router y su contraseña están actualmente hardcodeados en `flows.json`. Para una nueva instalación debes actualizarlos manualmente desde el editor Node-RED.
+Toda la configuración se hace en un solo archivo `.env`. No es necesario tocar `flows.json`.
 
-### Pasos:
+```bash
+cp .env.example .env
+nano .env   # editar los valores según tu red
+```
 
-1. Arranca el contenedor: `docker-compose up -d`
-2. Abre el editor en `http://localhost:1881/admin`
-3. Busca los nodos de tipo **function** que contienen comandos SSH. Usa `Ctrl+F` y busca `DTIC2025B` o `192.168.1.1`
-4. En cada nodo, reemplaza:
-   - `192.168.1.1` → IP de tu router OpenWrt
-   - `DTIC2025B_jp` → tu contraseña SSH del router
-5. Haz clic en **Deploy**
-6. Exporta el flujo actualizado: **Menú (≡) → Export → Download** y reemplaza `flows.json`
+| Variable | Descripción | Ejemplo |
+|---|---|---|
+| `ROUTER_IP` | IP del router OpenWrt | `192.168.1.1` |
+| `ROUTER_PASS` | Contraseña SSH del router (usuario `root`) | `mi_password` |
+| `SUBNET` | Subred a escanear con nmap | `192.168.1.0/24` |
+| `MY_PC_IP` | IP del equipo administrador (excluida del mapa) | `192.168.1.10` |
+| `DASH_IP` | IP del servidor donde corre Node-RED (para QR) | `192.168.1.10` |
+| `DASH_PORT` | Puerto del dashboard (no cambiar salvo conflicto) | `1881` |
 
-### Nodos que requieren actualización:
+Los nodos de Node-RED leen estas variables automáticamente vía `env.get('NOMBRE')`. Después de editar `.env`, reinicia el contenedor para que tome los nuevos valores:
 
-| Nodo | Variable a cambiar |
-|---|---|
-| WiFi SSID change | `ROUTER_IP`, `ROUTER_PASS` |
-| Internet block policy | `ROUTER_IP`, `ROUTER_PASS` |
-| Internet rollback | `ROUTER_IP`, `ROUTER_PASS` |
-| Read SSID | `ROUTER_IP`, `ROUTER_PASS` |
-| DHCP lease count | `ROUTER_IP`, `ROUTER_PASS` |
-| CPU/RAM load | `ROUTER_IP`, `ROUTER_PASS` |
-
-También actualiza el **rango de subred** en el nodo de escaneo nmap (`192.168.1.0/24` → tu subred).
+```bash
+docker-compose down && docker-compose up -d
+```
 
 ## Arquitectura
 

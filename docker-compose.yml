@@ -10,9 +10,16 @@ services:
       - NET_RAW
       - NET_ADMIN
     command: ["node-red", "--userDir", "/data", "flows.json", "-p", "1881"]
+    env_file:
+      - .env
     environment:
       FLOWS: /data/flows.json
       NODE_RED_ENABLE_PROJECTS: "false"
       DASH_PORT: "1881"
+      ROUTER_IP: ${ROUTER_IP:-192.168.1.1}
+      ROUTER_PASS: ${ROUTER_PASS:-}
+      SUBNET: ${SUBNET:-192.168.1.0/24}
+      MY_PC_IP: ${MY_PC_IP:-192.168.1.218}
+      DASH_IP: ${DASH_IP:-192.168.1.217}
     volumes:
       - ./:/data
