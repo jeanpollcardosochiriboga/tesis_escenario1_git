@@ -1,0 +1,6 @@
+# Dominios permitidos (whitelist) para Escenario 1
+# Uno por linea, sin http/https
+
+epn.edu.ec
+aulasvirtuales.epn.edu.ec
+www.epn.edu.ec

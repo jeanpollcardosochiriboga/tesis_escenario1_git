@@ -1,0 +1,8 @@
+node_modules/
+.config.users.json
+.config.runtime.json
+.config.nodes.json
+*.backup
+flows_cred.json
+resource_log.csv
+scripts/backups/

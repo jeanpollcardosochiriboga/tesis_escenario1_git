@@ -1,0 +1,2204 @@
+[
+    {
+        "id": "3224d6c38c360858",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "931c2a881d2b9bee",
+        "type": "subflow",
+        "name": "Subflow 1",
+        "info": "",
+        "in": [],
+        "out": []
+    },
+    {
+        "id": "08ebf0e9b885bd36",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "9501a988f936e758",
+        "type": "ui_tab",
+        "name": "Demo de Red 2",
+        "icon": "dashboard",
+        "order": 6,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d21186eb1c2211d8",
+        "type": "ui_tab",
+        "name": "Registro",
+        "icon": "dashboard",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "7c3039e6de40e410",
+        "type": "ui_tab",
+        "name": "QR-Registro",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "3ff985faad71fa94",
+        "type": "ui_group",
+        "name": "Dispositivos en la Red",
+        "tab": "9501a988f936e758",
+        "order": 1,
+        "disp": false,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "646813c0c6209bae",
+        "type": "ui_group",
+        "name": "Paso 1: Conectarse a la Poli-Red",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c49567e07f41fde3",
+        "type": "ui_group",
+        "name": "Paso 2: Registrar Nombre",
+        "tab": "7c3039e6de40e410",
+        "order": 1,
+        "disp": false,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ui_group_config",
+        "type": "ui_group",
+        "name": "Configuración del Sistema",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "tab_config_main",
+        "type": "ui_tab",
+        "name": "Configuracion",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "tab_qr_wifi_page",
+        "type": "ui_tab",
+        "name": "QR-WIFI",
+        "icon": "wifi",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "group_config",
+        "type": "ui_group",
+        "name": "Configuración",
+        "tab": "tab_config_main",
+        "order": 2,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "group_qr_wifi",
+        "type": "ui_group",
+        "name": "Resultado Wifi",
+        "tab": "tab_qr_wifi_page",
+        "order": 1,
+        "disp": false,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "group_qr_reg",
+        "type": "ui_group",
+        "name": "Registro",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "tab_esc1_metrics",
+        "type": "ui_tab",
+        "name": "ESC1 Metricas",
+        "icon": "insights",
+        "order": 7,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "group_metrics_esc1",
+        "type": "ui_group",
+        "name": "ESC1 Metricas",
+        "tab": "tab_esc1_metrics",
+        "order": 1,
+        "disp": true,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c578e5d8c89595ab",
+        "type": "ui_group",
+        "name": "Estado de internet",
+        "tab": "tab_config_main",
+        "order": 4,
+        "disp": false,
+        "width": "5",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8b0aa622293c9d33",
+        "type": "ui_group",
+        "name": "Rendimiento Router",
+        "tab": "tab_config_main",
+        "order": 3,
+        "disp": false,
+        "width": "14",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2cf5b5c854bf51e3",
+        "type": "ui_group",
+        "name": "Auditoria de nombres",
+        "tab": "d21186eb1c2211d8",
+        "order": 2,
+        "disp": false,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6cf0a13993113806",
+        "type": "ui_spacer",
+        "z": "3224d6c38c360858",
+        "name": "spacer",
+        "group": "",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "19481fdf1bd537c5",
+        "type": "ui_spacer",
+        "z": "3224d6c38c360858",
+        "name": "spacer",
+        "group": "",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "40f39e53ee1ae54d",
+        "type": "ui_spacer",
+        "z": "3224d6c38c360858",
+        "name": "spacer",
+        "group": "",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d2220761a22f0c57",
+        "type": "ui_spacer",
+        "z": "3224d6c38c360858",
+        "name": "spacer",
+        "group": "",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "73ade12ef4d51b87",
+        "type": "ui_group",
+        "name": "Group 4",
+        "tab": "tab_config_main",
+        "order": 1,
+        "disp": false,
+        "width": "3",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "76ba52d86c6f655d",
+        "type": "ui_spacer",
+        "z": "3224d6c38c360858",
+        "name": "spacer",
+        "group": "73ade12ef4d51b87",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "621b822ea7930549",
+        "type": "inject",
+        "z": "3224d6c38c360858",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 60,
+        "wires": [
+            [
+                "cf2a72e0fa30090a"
+            ]
+        ]
+    },
+    {
+        "id": "cf2a72e0fa30090a",
+        "type": "exec",
+        "z": "3224d6c38c360858",
+        "command": "sudo nmap -sn 192.168.1.0/24",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 230,
+        "y": 140,
+        "wires": [
+            [
+                "4aecc470189ef470",
+                "8b10b8cf29c8b481"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "8b10b8cf29c8b481",
+        "type": "function",
+        "z": "3224d6c38c360858",
+        "name": "function 1",
+        "func": "// ==========================================\n// CONFIGURACION VIP (Actualizada)\n// ==========================================\nconst MY_PC_IP = \"192.168.1.218\";\nconst ROUTER_IP = \"192.168.1.1\";\nconst PRIVACY_TTL_MS = 2 * 60 * 60 * 1000; // 2 horas\n\n// ==========================================\n// PREPARACION\n// ==========================================\nlet devices = [];\nconst scanStartTs = Date.now();\nconst rawOutput = (msg.payload || \"\").toString();\nconst lines = rawOutput.split('\\n');\nconst ipRegex = /(\\d{1,3}(?:\\.\\d{1,3}){3})/;\n\n// Limpieza de privacidad para mapa de alias\nconst nameMapRaw = global.get(\"deviceNames\") || {};\nconst nameMap = {};\n\nfor (const [ip, val] of Object.entries(nameMapRaw)) {\n    if (!val) continue;\n\n    if (typeof val === \"string\") {\n        nameMap[ip] = { alias: val, ts: scanStartTs, consent: true };\n        continue;\n    }\n\n    if (typeof val === \"object\") {\n        const alias = (val.alias || val.nombre || \"Invitado\").toString();\n        const ts = Number(val.ts || 0);\n\n        if (!ts || (scanStartTs - ts) <= PRIVACY_TTL_MS) {\n            nameMap[ip] = {\n                alias,\n                ts: ts || scanStartTs,\n                consent: !!val.consent\n            };\n        }\n    }\n}\n\nglobal.set(\"deviceNames\", nameMap);\n\nlet metrics = global.get(\"esc1_metrics\") || {};\nmetrics.scan_total = Number(metrics.scan_total || 0);\nmetrics.hosts_new_total = Number(metrics.hosts_new_total || 0);\nmetrics.discovery_delay_samples_ms = Array.isArray(metrics.discovery_delay_samples_ms) ? metrics.discovery_delay_samples_ms : [];\nmetrics.dns_latency_samples_ms = Array.isArray(metrics.dns_latency_samples_ms) ? metrics.dns_latency_samples_ms : [];\nmetrics.privacy_purges_total = Number(metrics.privacy_purges_total || 0);\nmetrics.mode_actual = \"real\";\nmetrics.last_scan_start_ts = scanStartTs;\n\nlet currentIP = null;\nlet currentName = \"Dispositivo Desconocido\";\nlet currentVendor = \"Desconocido\";\n\nfunction getAliasByIP(ip) {\n    const val = nameMap[ip];\n    if (!val) return \"\";\n    if (typeof val === \"string\") return val;\n    if (typeof val === \"object\") return (val.alias || val.nombre || \"\").toString();\n    return \"\";\n}\n\nfunction pushBounded(arr, value, maxSize) {\n    arr.push(value);\n    if (arr.length > maxSize) {\n        arr.splice(0, arr.length - maxSize);\n    }\n}\n\nfunction processDevice(ip, name, vendor) {\n    let os = \"Desconocido\";\n    let nameLower = (name || \"\").toLowerCase();\n    let vendorLower = (vendor || \"\").toLowerCase();\n\n    if (ip === ROUTER_IP || nameLower.includes('gateway') || nameLower.includes('openwrt')) {\n        os = \"Router\";\n        name = \"Router OpenWrt (Nucleo)\";\n    }\n    else if (\n        nameLower.includes('win') || nameLower.includes('pc') ||\n        nameLower.includes('laptop') || nameLower.includes('desktop') ||\n        nameLower.includes('ubuntu') || nameLower.includes('kali') ||\n        nameLower.includes('asus') ||\n        vendorLower.includes('asus') || vendorLower.includes('intel') ||\n        vendorLower.includes('msi') || vendorLower.includes('hp') ||\n        vendorLower.includes('dell') || vendorLower.includes('lenovo') ||\n        vendorLower.includes('acer')\n    ) {\n        os = \"Windows/Linux\";\n    }\n    else if (nameLower.includes('android') || vendorLower.includes('samsung') || vendorLower.includes('xiaomi') || vendorLower.includes('huawei') || vendorLower.includes('motorola')) {\n        os = \"Android\";\n    }\n    else if (nameLower.includes('iphone') || vendorLower.includes('apple')) {\n        os = \"iOS\";\n    }\n\n    const alias = getAliasByIP(ip);\n    if (alias) {\n        name = \"Alias: \" + alias;\n    }\n\n    if (ip === MY_PC_IP || nameLower.includes(\"jeanpoll\")) {\n        name = \"jeanpoll-ASUS (Admin)\";\n        os = \"Windows/Linux\";\n        vendor = \"ASUS TUF\";\n    }\n\n    let sitioVisitado = global.get(\"sitio_\" + ip) || global.get(\"sitio_::ffff:\" + ip) || \"En espera de trafico...\";\n\n    const dnsTs = Number(global.get(\"dns_ts_\" + ip) || global.get(\"dns_ts_::ffff:\" + ip) || 0);\n    if (dnsTs > 0) {\n        const latMs = Date.now() - dnsTs;\n        if (latMs >= 0 && latMs <= 600000) {\n            pushBounded(metrics.dns_latency_samples_ms, latMs, 400);\n            metrics.dns_latency_last_ms = latMs;\n        }\n    }\n\n    devices.push({\n        \"Nombre\": name,\n        \"IP\": ip,\n        \"Fabricante\": vendor,\n        \"OS\": os,\n        \"sitio_actual\": sitioVisitado\n    });\n}\n\nfor (const lineRaw of lines) {\n    const line = (lineRaw || \"\").trim();\n    if (!line) continue;\n\n    if (line.startsWith(\"Nmap scan report for\")) {\n        if (currentIP) processDevice(currentIP, currentName, currentVendor);\n\n        currentIP = null;\n        currentName = \"Dispositivo Desconocido\";\n        currentVendor = \"Desconocido\";\n\n        const report = line.replace(\"Nmap scan report for\", \"\").trim();\n        const named = report.match(/^(.*?)\\s+\\((\\d{1,3}(?:\\.\\d{1,3}){3})\\)$/);\n        if (named) {\n            currentName = named[1];\n            currentIP = named[2];\n        } else {\n            const ipOnly = report.match(/^(\\d{1,3}(?:\\.\\d{1,3}){3})$/);\n            if (ipOnly) {\n                currentIP = ipOnly[1];\n            } else {\n                const ipFallback = report.match(ipRegex);\n                if (ipFallback) currentIP = ipFallback[1];\n                if (report && report !== currentIP && !/^_gateway/i.test(report)) {\n                    currentName = report;\n                }\n            }\n        }\n        continue;\n    }\n\n    if (currentIP && line.includes(\"MAC Address:\")) {\n        let vendorMatch = line.match(/\\((.*?)\\)/);\n        if (vendorMatch && vendorMatch[1] && vendorMatch[1] !== \"Unknown\") {\n            currentVendor = vendorMatch[1];\n        }\n    }\n}\n\nif (currentIP) processDevice(currentIP, currentName, currentVendor);\n\nconst uniqueDevices = [];\nconst seenIPs = new Set();\nfor (const dev of devices) {\n    if (!seenIPs.has(dev.IP)) {\n        seenIPs.add(dev.IP);\n        uniqueDevices.push(dev);\n    }\n}\n\nlet seenHosts = global.get(\"esc1_seen_hosts\") || {};\nfor (const dev of uniqueDevices) {\n    if (!seenHosts[dev.IP]) {\n        seenHosts[dev.IP] = Date.now();\n        metrics.hosts_new_total += 1;\n\n        const joinTs = Number(global.get(\"esc1_join_\" + dev.IP) || 0);\n        if (joinTs > 0) {\n            const delay = Date.now() - joinTs;\n            if (delay >= 0 && delay <= 600000) {\n                pushBounded(metrics.discovery_delay_samples_ms, delay, 300);\n                metrics.discovery_delay_last_ms = delay;\n            }\n        }\n    }\n}\n\nglobal.set(\"esc1_seen_hosts\", seenHosts);\n\nconst scanEndTs = Date.now();\nmetrics.scan_total += 1;\nmetrics.last_scan_end_ts = scanEndTs;\nmetrics.last_scan_duration_ms = scanEndTs - scanStartTs;\nmetrics.hosts_visible = uniqueDevices.length;\n\nif (!metrics.mount_start_ts) {\n    metrics.mount_start_ts = scanStartTs;\n}\nif (!metrics.first_scan_ready_ts) {\n    metrics.first_scan_ready_ts = scanEndTs;\n}\nif (metrics.mount_start_ts && metrics.first_scan_ready_ts) {\n    metrics.mount_time_ms = metrics.first_scan_ready_ts - metrics.mount_start_ts;\n}\n\nglobal.set(\"esc1_metrics\", metrics);\n\nglobal.set(\"esc1_last_devices\", uniqueDevices);\n\nmsg.payload = uniqueDevices;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 240,
+        "wires": [
+            [
+                "d5f7cb97419466c8"
+            ]
+        ]
+    },
+    {
+        "id": "4aecc470189ef470",
+        "type": "debug",
+        "z": "3224d6c38c360858",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "d5f7cb97419466c8",
+        "type": "ui_template",
+        "z": "3224d6c38c360858",
+        "group": "3ff985faad71fa94",
+        "name": "",
+        "order": 0,
+        "width": "30",
+        "height": "20",
+        "format": "<style>\n    /* --- Estilos Generales --- */\n    .netmap-container {\n        width: 100%;\n        min-width: 800px;\n        min-height: 85vh;\n        overflow: hidden;\n        font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif;\n        position: relative;\n        background-color: #ffffff;\n        border-radius: 8px;\n        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\n        display: flex;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .link {\n        stroke-opacity: 0.7;\n        stroke-width: 4px;\n        transition: stroke 0.5s;\n    }\n\n    .link-stable {\n        stroke: #2ecc71;\n    }\n\n    .link-new {\n        stroke: #f1c40f;\n        stroke-dasharray: 5;\n        animation: dash-flow 1s linear infinite;\n    }\n\n    .link-lost {\n        stroke: #e74c3c;\n    }\n\n    @keyframes dash-flow {\n        to {\n            stroke-dashoffset: -10;\n        }\n    }\n\n    .node image {\n        cursor: grab;\n        transition: transform 0.2s;\n    }\n\n    .node image:active {\n        cursor: grabbing;\n    }\n\n    .node text {\n        font-size: 16px;\n        font-weight: 700;\n        fill: #333;\n        pointer-events: none;\n        text-shadow: 0 2px 4px rgba(255, 255, 255, 0.9);\n        font-family: \"Segoe UI\", sans-serif;\n    }\n\n    .node.hovered image {\n        transform: scale(1.15);\n        filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));\n    }\n\n    .netmap-info-panel {\n        position: absolute;\n        top: 12px;\n        right: 12px;\n        width: min(360px, calc(100% - 24px));\n        background: rgba(255, 255, 255, 0.96);\n        border: 1px solid #d8e3ee;\n        border-radius: 10px;\n        padding: 10px 12px;\n        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);\n        z-index: 4;\n        color: #1f2d3d;\n        font-size: 13px;\n        line-height: 1.35;\n        pointer-events: none;\n    }\n\n    .netmap-info-head {\n        display: flex;\n        justify-content: space-between;\n        align-items: center;\n        gap: 8px;\n        margin-bottom: 6px;\n    }\n\n    .netmap-info-title {\n        font-size: 14px;\n        font-weight: 700;\n        color: #10395a;\n    }\n\n    .netmap-pin {\n        font-size: 11px;\n        font-weight: 700;\n        padding: 2px 8px;\n        border-radius: 999px;\n        background: #e8f3ff;\n        color: #1f5a90;\n        border: 1px solid #b8d8fb;\n    }\n\n    .netmap-info-idle {\n        color: #4f6275;\n        font-style: italic;\n    }\n</style>\n\n<div class=\"netmap-container\" id=\"netmap-d3-{{$id}}\"><div class=\"netmap-info-panel netmap-info-idle\" id=\"netmap-info-{{$id}}\">Pasa el cursor sobre un dispositivo o haz clic para anclar la informacion.</div></div>\n<script src=\"/js/d3.v7.min.js\"></script>\n<script>\n    (function(scope) {\n    var svg;\n    var simulation;\n    var link;\n    var node;\n    var width = 0;\n    var height = 0;\n    var routerIP = \"192.168.1.1\";\n    var containerId;\n    var previousDeviceIPs = new Set();\n    var infoPanelId;\n    var infoPanelEl;\n    var pinnedNodeId = null;\n    var latestNodesById = {};\n\n    // --- CONFIGURACION DE TAMANOS ---\n    var imgSize = 120;\n    var linkDistance = 350;\n    var repulsionStrength = -2500;\n\n    function getLogoURL(osType) {\n        if (osType === \"Windows/Linux\") return \"/images/laptop.png\";\n        if (osType === \"Router\") return \"/images/router.png\";\n        return \"/images/default_device.png\";\n    }\n\n    function escapeHtml(value) {\n        return String(value || \"\")\n            .replace(/&/g, \"&amp;\")\n            .replace(/</g, \"&lt;\")\n            .replace(/>/g, \"&gt;\")\n            .replace(/\"/g, \"&quot;\")\n            .replace(/'/g, \"&#39;\");\n    }\n\n    function buildInfoHtml(d, isPinned) {\n        if (!d) {\n            return '<div class=\"netmap-info-title\">Sin seleccion</div>';\n        }\n\n        var stateLabel = isPinned ? \"ANCLADO\" : \"EN VIVO\";\n        var sitio = d.id === \"router_node\" ? \"Infraestructura de red\" : (d.sitio_actual || \"En espera de trafico...\");\n        var os = d.os || \"Desconocido\";\n        var fabricante = d.fabricante || \"Desconocido\";\n\n        return [\n            '<div class=\"netmap-info-head\">',\n            '<span class=\"netmap-info-title\">' + escapeHtml(d.name || \"Dispositivo\") + '</span>',\n            '<span class=\"netmap-pin\">' + stateLabel + '</span>',\n            '</div>',\n            '<div><b>IP:</b> ' + escapeHtml(d.ip || \"-\") + '</div>',\n            '<div><b>Sitio:</b> ' + escapeHtml(sitio) + '</div>',\n            '<div><b>OS:</b> ' + escapeHtml(os) + '</div>',\n            '<div><b>Fabricante:</b> ' + escapeHtml(fabricante) + '</div>'\n        ].join('');\n    }\n\n    function showIdleInfo() {\n        if (!infoPanelEl) return;\n        infoPanelEl.className = 'netmap-info-panel netmap-info-idle';\n        infoPanelEl.innerHTML = 'Pasa el cursor sobre un dispositivo o haz clic para anclar la informacion.';\n    }\n\n    function showInfoForNode(d, isPinned) {\n        if (!infoPanelEl || !d) return;\n        infoPanelEl.className = 'netmap-info-panel netmap-info-active';\n        infoPanelEl.innerHTML = buildInfoHtml(d, !!isPinned);\n    }\n\n    function refreshPinnedInfo() {\n        if (!pinnedNodeId) return;\n\n        var pinned = latestNodesById[pinnedNodeId];\n        if (pinned) {\n            showInfoForNode(pinned, true);\n        } else {\n            pinnedNodeId = null;\n            showIdleInfo();\n        }\n    }\n\n    function bindNodeInteractions() {\n        node.on('mouseenter', function(event, d) {\n                d3.select(this).classed('hovered', true);\n                if (!pinnedNodeId) {\n                    showInfoForNode(d, false);\n                }\n            })\n            .on('mouseleave', function() {\n                d3.select(this).classed('hovered', false);\n                if (!pinnedNodeId) {\n                    showIdleInfo();\n                }\n            })\n            .on('click', function(event, d) {\n                if (!event) return;\n                event.stopPropagation();\n\n                if (d.id === 'router_node') {\n                    pinnedNodeId = null;\n                    showIdleInfo();\n                    return;\n                }\n\n                if (pinnedNodeId === d.id) {\n                    pinnedNodeId = null;\n                    showIdleInfo();\n                } else {\n                    pinnedNodeId = d.id;\n                    showInfoForNode(d, true);\n                }\n            });\n    }\n\n    function updateGraph(data) {\n        if (!svg) {\n            var container = document.getElementById(containerId);\n            if (!container) return;\n\n            infoPanelId = \"netmap-info-\" + scope.$id;\n            infoPanelEl = document.getElementById(infoPanelId);\n            if (infoPanelEl) {\n                showIdleInfo();\n            }\n\n            width = container.offsetWidth;\n            height = container.offsetHeight;\n\n            // Si carga colapsado, forzamos un tamano widescreen\n            if (width === 0) width = window.innerWidth * 0.9;\n            if (height === 0) height = window.innerHeight * 0.8;\n\n            svg = d3.select(container)\n                .append(\"svg\")\n                .attr(\"width\", \"100%\")\n                .attr(\"height\", \"100%\")\n                .attr(\"preserveAspectRatio\", \"xMidYMid meet\");\n\n            link = svg.append(\"g\").attr(\"class\", \"links\").selectAll(\"line\");\n            node = svg.append(\"g\").attr(\"class\", \"nodes\").selectAll(\".node\");\n\n            simulation = d3.forceSimulation()\n                .force(\"link\", d3.forceLink().id(function(d) { return d.id; }).distance(linkDistance))\n                .force(\"charge\", d3.forceManyBody().strength(repulsionStrength))\n                .force(\"center\", d3.forceCenter(width / 2, height / 2))\n                .force(\"collide\", d3.forceCollide(imgSize * 0.8));\n\n            simulation.on(\"tick\", ticked);\n\n            svg.on(\"click\", function(event) {\n                if (event && event.target === svg.node()) {\n                    pinnedNodeId = null;\n                    showIdleInfo();\n                }\n            });\n        }\n\n        var nodesData = [];\n        var linksData = [];\n        var routerNodeId = \"router_node\";\n\n        // 1. NODO ROUTER (CENTRADO)\n        nodesData.push({\n            id: routerNodeId,\n            name: \"OpenWRT Lab\",\n            ip: routerIP,\n            logo: getLogoURL(\"Router\"),\n            fx: width / 2,\n            fy: height / 2\n        });\n\n        data.forEach(function(d) {\n            if (d.IP === routerIP || !d.IP) return;\n\n            var isNew = !previousDeviceIPs.has(d.IP);\n            previousDeviceIPs.add(d.IP);\n\n            nodesData.push({\n                id: d.IP,\n                name: d.Nombre || \"Dispositivo\",\n                ip: d.IP,\n                logo: getLogoURL(d.OS),\n                os: d.OS,\n                fabricante: d.Fabricante,\n                sitio_actual: d.sitio_actual\n            });\n\n            linksData.push({\n                source: routerNodeId,\n                target: d.IP,\n                isNew: isNew\n            });\n        });\n\n        latestNodesById = {};\n        nodesData.forEach(function(n) {\n            latestNodesById[n.id] = n;\n        });\n\n        // Clave robusta para links, incluso cuando D3 transforma source/target en objetos\n        link = link.data(linksData, function(d) {\n            var sourceId = typeof d.source === \"object\" ? d.source.id : d.source;\n            var targetId = typeof d.target === \"object\" ? d.target.id : d.target;\n            return sourceId + \"-\" + targetId;\n        });\n\n        link.exit().remove();\n\n        link = link.enter()\n            .append(\"line\")\n            .merge(link)\n            .attr(\"class\", function(d) {\n                return d.isNew ? \"link link-new\" : \"link link-stable\";\n            });\n\n        node = node.data(nodesData, function(d) { return d.id; });\n        node.exit().remove();\n\n        var newNode = node.enter()\n            .append(\"g\")\n            .attr(\"class\", \"node\")\n            .call(\n                d3.drag()\n                    .on(\"start\", dragstarted)\n                    .on(\"drag\", dragged)\n                    .on(\"end\", dragended)\n            );\n\n        newNode.append(\"image\")\n            .attr(\"xlink:href\", function(d) { return d.logo; })\n            .attr(\"href\", function(d) { return d.logo; })\n            .attr(\"width\", imgSize)\n            .attr(\"height\", imgSize)\n            .attr(\"x\", -imgSize / 2)\n            .attr(\"y\", -imgSize / 2)\n            .append(\"title\")\n            .text(function(d) {\n                if (d.id === \"router_node\") {\n                    return d.name + \"\\nIP: \" + d.ip;\n                }\n                return d.name + \"\\nIP: \" + d.ip + \"\\nVisitando: \" + (d.sitio_actual || \"N/A\");\n            });\n\n        newNode.append(\"text\")\n            .attr(\"dy\", imgSize / 2 + 25)\n            .attr(\"text-anchor\", \"middle\")\n            .text(function(d) {\n                return (d.name || \"\").substring(0, 15);\n            });\n\n        node = newNode.merge(node);\n\n        node.select(\"image\").select(\"title\")\n            .text(function(d) {\n                if (d.id === \"router_node\") {\n                    return d.name + \"\\nIP: \" + d.ip;\n                }\n                return d.name + \"\\nIP: \" + d.ip + \"\\nVisitando: \" + (d.sitio_actual || \"En espera de tráfico...\");\n            });\n\n        bindNodeInteractions();\n        refreshPinnedInfo();\n\n        simulation.nodes(nodesData);\n        simulation.force(\"link\").links(linksData);\n        simulation.alpha(1).restart();\n    }\n\n    function dragstarted(event, d) {\n        if (!event.active) simulation.alphaTarget(0.3).restart();\n        d.fx = d.x;\n        d.fy = d.y;\n    }\n\n    function dragged(event, d) {\n        d.fx = event.x;\n        d.fy = event.y;\n    }\n\n    function dragended(event, d) {\n        if (!event.active) simulation.alphaTarget(0);\n\n        if (d.id === \"router_node\") {\n            d.fx = width / 2;\n            d.fy = height / 2;\n        } else {\n            d.fx = null;\n            d.fy = null;\n        }\n    }\n\n    function ticked() {\n        // Restriccion simple para que no se salgan del SVG\n        node.attr(\"transform\", function(d) {\n            d.x = Math.max(imgSize / 2, Math.min(width - imgSize / 2, d.x));\n            d.y = Math.max(imgSize / 2, Math.min(height - imgSize / 2, d.y));\n            return \"translate(\" + d.x + \",\" + d.y + \")\";\n        });\n\n        link.attr(\"x1\", function(d) { return d.source.x; })\n            .attr(\"y1\", function(d) { return d.source.y; })\n            .attr(\"x2\", function(d) { return d.target.x; })\n            .attr(\"y2\", function(d) { return d.target.y; });\n    }\n\n    scope.$watch(\"msg\", function() {\n        if (scope.msg && scope.msg.payload) {\n            if (!containerId) {\n                containerId = \"netmap-d3-\" + scope.$id;\n\n                var interval = setInterval(function() {\n                    if (document.getElementById(containerId)) {\n                        clearInterval(interval);\n                        updateGraph(scope.msg.payload);\n                    }\n                }, 100);\n            } else {\n                updateGraph(scope.msg.payload);\n            }\n        }\n    });\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 540,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "form_wifi_nav",
+        "type": "ui_form",
+        "z": "3224d6c38c360858",
+        "name": "Formulario Nombre",
+        "label": "Configuracion de Red",
+        "group": "group_config",
+        "order": 1,
+        "width": "6",
+        "height": 1,
+        "options": [
+            {
+                "label": "Nombre de la Red (SSID)",
+                "value": "ssid",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "ssid": ""
+        },
+        "payload": "",
+        "submit": "CREAR RED",
+        "cancel": "CANCELAR",
+        "topic": "",
+        "topicType": "str",
+        "splitLayout": true,
+        "className": "",
+        "x": 150,
+        "y": 740,
+        "wires": [
+            [
+                "func_nav_logic"
+            ]
+        ]
+    },
+    {
+        "id": "func_nav_logic",
+        "type": "function",
+        "z": "3224d6c38c360858",
+        "name": "Lógica: Router + Navegación",
+        "func": "var ssid = msg.payload.ssid;\nvar routerPass = 'DTIC2025B_jp';\n\n// --- 1. COMANDO ROUTER (SSH) ---\n// Cambia SSID y quita contraseña (Open)\nvar uciCmds = `uci set wireless.default_radio1.ssid='${ssid}' && uci set wireless.default_radio1.encryption='none' && uci commit wireless && wifi reload`;\nvar sshFullCmd = `sshpass -p '${routerPass}' ssh -o StrictHostKeyChecking=no root@192.168.1.1 \"${uciCmds}\"`;\nvar msgSSH = { payload: sshFullCmd };\n\n// --- 2. GENERAR QR WIFI (Para la siguiente pestaña) ---\n// Formato red abierta: WIFI:T:nopass;S:nombre;;\nvar qrString = `WIFI:T:nopass;S:${ssid};;`;\nvar msgQR = { payload: qrString };\n\n// Salida 1: SSH | Salida 2: Template QR\nreturn [msgSSH, msgQR];",
+        "outputs": 3,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 740,
+        "wires": [
+            [
+                "exec_router_nav"
+            ],
+            [
+                "template_qr_wifi_nav"
+            ],
+            [
+                "ui_control_node"
+            ]
+        ]
+    },
+    {
+        "id": "exec_router_nav",
+        "type": "exec",
+        "z": "3224d6c38c360858",
+        "command": "",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "SSH Router",
+        "x": 710,
+        "y": 680,
+        "wires": [
+            [
+                "7cdd51645fcf373d"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "template_qr_wifi_nav",
+        "type": "ui_template",
+        "z": "3224d6c38c360858",
+        "group": "group_qr_wifi",
+        "name": "Mostrar QR Wifi",
+        "order": 1,
+        "width": "24",
+        "height": "24",
+        "format": "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js\"></script>\n\n<div class=\"qr-cinema-container\">\n    <div class=\"qr-header\">\n        <div class=\"qr-icon-wrap\">\n            <svg viewBox=\"0 0 24 24\" width=\"30\" height=\"30\" stroke=\"white\" stroke-width=\"2\" fill=\"none\">\n                <path d=\"M5 12.55a11 11 0 0 1 14.08 0\"></path>\n                <path d=\"M1.42 9a16 16 0 0 1 21.16 0\"></path>\n                <path d=\"M8.53 16.11a6 6 0 0 1 6.95 0\"></path>\n                <line x1=\"12\" y1=\"20\" x2=\"12.01\" y2=\"20\"></line>\n            </svg>\n        </div>\n        <h2>ACCESO WI-FI AUTOMÁTICO</h2>\n        <p>Escanea con tu cámara para conectarte</p>\n    </div>\n\n    <div class=\"qr-frame\">\n        <div id=\"wifi-qr-target-nav\"></div>\n        <div ng-if=\"!msg.payload\" class=\"qr-placeholder\">\n            GENERANDO CÓDIGO...\n        </div>\n    </div>\n\n    <div class=\"qr-footer\">\n        <span class=\"step-text\">PASO 02 // CONFIGURACIÓN DE RED COMPLETA</span>\n    </div>\n</div>\n\n<style>\n    :host {\n        background: transparent !important;\n        display: block;\n        width: 100%;\n    }\n\n    .qr-cinema-container {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        justify-content: center;\n        background: transparent;\n        border: none;\n        box-shadow: none;\n        padding: 40px 0;\n        min-height: 65vh;\n        /* Asegura centrado vertical idéntico */\n        font-family: 'Segoe UI', sans-serif;\n    }\n\n    .qr-header {\n        text-align: center;\n        margin-bottom: 40px;\n    }\n\n    .qr-icon-wrap {\n        background: #0ea5e9;\n        /* AZUL WI-FI */\n        width: 65px;\n        height: 65px;\n        border-radius: 50%;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        margin: 0 auto 20px;\n        box-shadow: 0 8px 20px rgba(14, 165, 233, 0.3);\n    }\n\n    .qr-header h2 {\n        color: #0369a1;\n        font-weight: 900;\n        font-size: 2.2rem;\n        letter-spacing: 2px;\n        margin: 0;\n    }\n\n    .qr-header p {\n        color: #64748b;\n        font-size: 1.1rem;\n        margin-top: 10px;\n    }\n\n    .qr-frame {\n        background: #ffffff;\n        padding: 30px;\n        border-radius: 15px;\n        border: 1px solid rgba(0, 0, 0, 0.03);\n        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);\n    }\n\n    #wifi-qr-target-nav img {\n        width: 450px !important;\n        height: 450px !important;\n        border: 10px solid white;\n        border-radius: 5px;\n    }\n\n    .qr-placeholder {\n        width: 450px;\n        height: 450px;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        color: #cbd5e1;\n        font-weight: bold;\n        letter-spacing: 2px;\n        font-size: 1.5rem;\n        animation: pulse-qr 1.5s infinite;\n    }\n\n    .qr-footer {\n        margin-top: 40px;\n        text-align: center;\n        font-family: monospace;\n    }\n\n    .step-text {\n        color: #94a3b8;\n        font-size: 0.95rem;\n        font-weight: bold;\n    }\n\n    @keyframes pulse-qr {\n\n        0%,\n        100% {\n            opacity: 0.5;\n        }\n\n        50% {\n            opacity: 1;\n        }\n    }\n</style>\n\n<script>\n    (function(scope) {\n        function drawQR(txt) {\n            var container = document.getElementById(\"wifi-qr-target-nav\");\n            if(!container) return;\n            container.innerHTML = \"\";\n            if(txt){\n                new QRCode(container, { text: txt, width: 450, height: 450, colorDark: \"#082f49\", colorLight: \"#ffffff\", correctLevel: QRCode.CorrectLevel.H });\n            }\n        }\n        scope.$watch('msg', function(msg) { if (msg && msg.payload) { drawQR(msg.payload); } });\n    })(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 720,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ui_control_node",
+        "type": "ui_ui_control",
+        "z": "3224d6c38c360858",
+        "name": "Control Navegación",
+        "events": "all",
+        "x": 730,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "trigger_get_ip",
+        "type": "inject",
+        "z": "3224d6c38c360858",
+        "name": "Detectar IP Inicial",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "2",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1130,
+        "y": 660,
+        "wires": [
+            [
+                "cmd_get_ip"
+            ]
+        ]
+    },
+    {
+        "id": "cmd_get_ip",
+        "type": "exec",
+        "z": "3224d6c38c360858",
+        "command": "hostname -I | awk '{print $1}'",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Obtener Mi IP",
+        "x": 1360,
+        "y": 660,
+        "wires": [
+            [
+                "func_create_dash_url"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "func_create_dash_url",
+        "type": "function",
+        "z": "3224d6c38c360858",
+        "name": "Crear URL Dinámica",
+        "func": "// 1. Limpiamos la IP\nvar myIP = (msg.payload || \"\").toString().trim();\n\n// VALIDACION DE SEGURIDAD\nif (!myIP || myIP.length < 7) {\n    // Usamos tu IP actual\n    myIP = \"192.168.1.217\";\n}\n\n// 2. Puerto configurable por entorno\n// NOTA: Como vi que en tu mensaje anterior usabas el puerto 1881, \n// lo pongo como valor por defecto en caso de que la variable falle.\nvar dashPort = (env.get(\"DASH_PORT\") || \"1881\").toString().trim();\nif (!dashPort) dashPort = \"1881\";\n\n// 3. LA MAGIA: URL directa a la nueva página móvil\nvar url = \"http://\" + myIP + \":\" + dashPort + \"/registro\";\n\n// 4. Enviamos al código QR\nmsg.payload = url;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1580,
+        "y": 640,
+        "wires": [
+            [
+                "template_qr_registro_dinamico"
+            ]
+        ]
+    },
+    {
+        "id": "template_qr_registro_dinamico",
+        "type": "ui_template",
+        "z": "3224d6c38c360858",
+        "group": "c49567e07f41fde3",
+        "name": "QR Registro (IP Real)",
+        "order": 1,
+        "width": "30",
+        "height": "23",
+        "format": "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js\"></script>\n\n<div class=\"qr-cinema-container\">\n    <div class=\"qr-header\">\n        <div class=\"qr-icon-wrap\">\n            <svg viewBox=\"0 0 24 24\" width=\"30\" height=\"30\" stroke=\"white\" stroke-width=\"2\" fill=\"none\">\n                <path d=\"M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2\"></path>\n                <circle cx=\"12\" cy=\"7\" r=\"4\"></circle>\n            </svg>\n        </div>\n        <h2>REGISTRO DE USUARIO</h2>\n        <p>Escanea para completar tus datos en el portal de seguridad</p>\n    </div>\n\n    <div class=\"qr-frame\">\n        <div id=\"reg-qr-target-dynamic\"></div>\n        <div ng-if=\"!msg.payload\" class=\"qr-placeholder\">\n            GENERANDO ACCESO...\n        </div>\n    </div>\n\n    <div class=\"qr-footer\">\n        <span class=\"url-text\">HOST: {{msg.payload}}</span><br>\n        <span class=\"step-text\">PASO 03 // PORTAL DE CAPTURA DE DATOS</span>\n    </div>\n</div>\n\n<style>\n    :host {\n        background: transparent !important;\n        display: block;\n        width: 100%;\n    }\n\n    .qr-cinema-container {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        justify-content: center;\n        background: transparent;\n        border: none;\n        box-shadow: none;\n        padding: 40px 0;\n        min-height: 65vh;\n        /* Idéntico al Wi-Fi */\n        font-family: 'Segoe UI', sans-serif;\n    }\n\n    .qr-header {\n        text-align: center;\n        margin-bottom: 40px;\n    }\n\n    .qr-icon-wrap {\n        background: #8b5cf6;\n        /* PÚRPURA REGISTRO */\n        width: 65px;\n        height: 65px;\n        border-radius: 50%;\n        /* Tamaños unificados */\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        margin: 0 auto 20px;\n        box-shadow: 0 8px 20px rgba(139, 92, 246, 0.3);\n    }\n\n    .qr-header h2 {\n        color: #4c1d95;\n        font-weight: 900;\n        font-size: 2.2rem;\n        letter-spacing: 2px;\n        margin: 0;\n    }\n\n    /* Letra unificada */\n    .qr-header p {\n        color: #64748b;\n        font-size: 1.1rem;\n        margin-top: 10px;\n    }\n\n    .qr-frame {\n        background: #ffffff;\n        padding: 30px;\n        border-radius: 15px;\n        /* Marco unificado */\n        border: 1px solid rgba(0, 0, 0, 0.03);\n        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);\n    }\n\n    #reg-qr-target-dynamic img {\n        width: 450px !important;\n        height: 450px !important;\n        border: 10px solid white;\n        border-radius: 5px;\n        /* Bordes unificados */\n    }\n\n    .qr-placeholder {\n        width: 450px;\n        height: 450px;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        color: #cbd5e1;\n        font-weight: bold;\n        letter-spacing: 2px;\n        font-size: 1.5rem;\n        animation: pulse-qr 1.5s infinite;\n    }\n\n    .qr-footer {\n        margin-top: 40px;\n        text-align: center;\n        font-family: monospace;\n        line-height: 1.8;\n    }\n\n    .url-text {\n        color: #0ea5e9;\n        font-weight: bold;\n        font-size: 1.0rem;\n    }\n\n    .step-text {\n        color: #94a3b8;\n        font-size: 0.95rem;\n        font-weight: bold;\n    }\n\n    @keyframes pulse-qr {\n\n        0%,\n        100% {\n            opacity: 0.5;\n        }\n\n        50% {\n            opacity: 1;\n        }\n    }\n</style>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n            if (msg && msg.payload) {\n                var container = document.getElementById(\"reg-qr-target-dynamic\");\n                if(!container) return;\n                container.innerHTML = \"\";\n                new QRCode(container, { text: msg.payload, width: 450, height: 450, colorDark: \"#2e1065\", colorLight: \"#ffffff\", correctLevel: QRCode.CorrectLevel.H });\n            }\n        });\n    })(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1600,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7cdd51645fcf373d",
+        "type": "delay",
+        "z": "3224d6c38c360858",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "15",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 910,
+        "y": 660,
+        "wires": [
+            [
+                "cmd_get_ip"
+            ]
+        ]
+    },
+    {
+        "id": "c35063bf5de9e502",
+        "type": "udp in",
+        "z": "3224d6c38c360858",
+        "name": "Receptor DNS",
+        "iface": "",
+        "port": "5515",
+        "ipv": "udp4",
+        "multicast": "false",
+        "group": "",
+        "datatype": "utf8",
+        "x": 710,
+        "y": 300,
+        "wires": [
+            [
+                "47a2a4b9ad9017eb"
+            ]
+        ]
+    },
+    {
+        "id": "47a2a4b9ad9017eb",
+        "type": "function",
+        "z": "3224d6c38c360858",
+        "name": "Filtro DNS",
+        "func": "let logTexto = (msg.payload || \"\").toString().trim();\nlet now = Date.now();\n\nlet metrics = global.get(\"esc1_metrics\") || {};\nmetrics.dns_events_total = Number(metrics.dns_events_total || 0) + 1;\nmetrics.dns_events_descartados = Number(metrics.dns_events_descartados || 0);\nmetrics.dns_events_validos = Number(metrics.dns_events_validos || 0);\nmetrics.dns_privado_detectado_total = Number(metrics.dns_privado_detectado_total || 0);\nmetrics.no_autorizado_detectado_total = Number(metrics.no_autorizado_detectado_total || 0);\nmetrics.sim_tests_total = Number(metrics.sim_tests_total || 0);\nmetrics.sim_tests_ok = Number(metrics.sim_tests_ok || 0);\nmetrics.dns_ipv6_total = Number(metrics.dns_ipv6_total || 0);\nmetrics.dns_ipv6_mapped_total = Number(metrics.dns_ipv6_mapped_total || 0);\nmetrics.dns_ipv6_unmapped_total = Number(metrics.dns_ipv6_unmapped_total || 0);\nmetrics.ui_push_total = Number(metrics.ui_push_total || 0);\n\nfunction saveMetrics() {\n    global.set(\"esc1_metrics\", metrics);\n}\n\nif (!logTexto.includes(\"query[\")) {\n    metrics.dns_events_descartados += 1;\n    saveMetrics();\n    return null;\n}\n\nlet regex = /query\\[([A-Za-z0-9_-]+)\\]\\s+([^\\s]+)\\s+from\\s+([a-fA-F0-9:.\\[\\]%]+)/;\nlet coincidencia = logTexto.match(regex);\n\nlet queryType = \"\";\nlet dominioCrudo = \"\";\nlet ipRaw = \"\";\n\nif (coincidencia && coincidencia.length >= 4) {\n    queryType = (coincidencia[1] || \"\").toUpperCase();\n    dominioCrudo = (coincidencia[2] || \"\").toLowerCase().replace(/\\.$/, \"\");\n    ipRaw = (coincidencia[3] || \"\").trim();\n} else {\n    let fallback = logTexto.match(/query\\[[^\\]]+\\]\\s+([^\\s]+).*?\\sfrom\\s+([^\\s]+)/i);\n    if (!fallback || fallback.length < 3) {\n        metrics.dns_events_descartados += 1;\n        saveMetrics();\n        return null;\n    }\n\n    dominioCrudo = (fallback[1] || \"\").toLowerCase().replace(/\\.$/, \"\");\n    ipRaw = (fallback[2] || \"\").trim();\n}\n\nipRaw = ipRaw.replace(/[;,]$/, \"\");\n\nfunction normalizarIP(ip) {\n    if (!ip) return \"\";\n\n    let salida = ip.trim().replace(/^\\[|\\]$/g, \"\");\n\n    if (salida.includes(\"%\")) {\n        salida = salida.split(\"%\")[0];\n    }\n\n    if (salida.startsWith(\"::ffff:\")) {\n        salida = salida.substring(7);\n    }\n\n    let ipv4AlFinal = salida.match(/(\\d{1,3}(?:\\.\\d{1,3}){3})$/);\n    if (ipv4AlFinal) {\n        return ipv4AlFinal[1];\n    }\n\n    return salida;\n}\n\nfunction dominioBase(dominio) {\n    let partes = dominio.split(\".\").filter(Boolean);\n    if (partes.length < 2) return dominio;\n\n    let tld = partes[partes.length - 1];\n    let sld = partes[partes.length - 2];\n\n    if (partes.length >= 3 && tld.length === 2 && sld.length <= 3) {\n        return partes[partes.length - 3] + \".\" + sld + \".\" + tld;\n    }\n\n    return sld + \".\" + tld;\n}\n\nlet ipOrigen = normalizarIP(ipRaw);\nif (!dominioCrudo || !ipOrigen) {\n    metrics.dns_events_descartados += 1;\n    saveMetrics();\n    return null;\n}\n\nconst ruidoPatterns = [\n    \".arpa\",\n    \".lan\",\n    \"connectivity-check\",\n    \"connectivitycheck\",\n    \"clients3.google.com\",\n    \"msftconnecttest\",\n    \"dns.msftncsi.com\",\n    \"time.android.com\",\n    \"google-analytics\",\n    \"doubleclick.net\",\n    \"optimizationguide\"\n];\n\nif (ruidoPatterns.some((p) => dominioCrudo.includes(p))) {\n    metrics.dns_events_descartados += 1;\n    saveMetrics();\n    return null;\n}\n\nlet mapIp6to4 = global.get(\"esc1_ip6_to_ip4\") || {};\nlet recentV4 = global.get(\"esc1_recent_dns_v4\") || [];\nlet recentV6 = global.get(\"esc1_recent_dns_v6\") || [];\n\nif (!Array.isArray(recentV4)) recentV4 = [];\nif (!Array.isArray(recentV6)) recentV6 = [];\n\nconst correlateMs = 5000;\nconst keepMs = 30000;\n\nrecentV4 = recentV4.filter((e) => e && e.ip && e.dom && (now - Number(e.ts || 0)) <= keepMs);\nrecentV6 = recentV6.filter((e) => e && e.ip && e.dom && (now - Number(e.ts || 0)) <= keepMs);\n\nconst isIPv6 = ipOrigen.includes(\":\");\nlet ipObjetivo = ipOrigen;\n\nif (isIPv6) {\n    metrics.dns_ipv6_total += 1;\n\n    if (mapIp6to4[ipOrigen]) {\n        ipObjetivo = mapIp6to4[ipOrigen];\n        metrics.dns_ipv6_mapped_total += 1;\n    } else {\n        const candidateV4 = Array.from(new Set(\n            recentV4\n                .filter((e) => e.dom === dominioCrudo && (now - Number(e.ts || 0)) <= correlateMs)\n                .map((e) => e.ip)\n        ));\n\n        if (candidateV4.length === 1) {\n            ipObjetivo = candidateV4[0];\n            mapIp6to4[ipOrigen] = ipObjetivo;\n            metrics.dns_ipv6_mapped_total += 1;\n        } else {\n            metrics.dns_ipv6_unmapped_total += 1;\n        }\n\n        recentV6.push({ ip: ipOrigen, dom: dominioCrudo, ts: now });\n    }\n} else {\n    const candidateV6 = Array.from(new Set(\n        recentV6\n            .filter((e) => e.dom === dominioCrudo && (now - Number(e.ts || 0)) <= correlateMs)\n            .map((e) => e.ip)\n    ));\n\n    if (candidateV6.length === 1 && !mapIp6to4[candidateV6[0]]) {\n        mapIp6to4[candidateV6[0]] = ipOrigen;\n    }\n\n    recentV4.push({ ip: ipOrigen, dom: dominioCrudo, ts: now });\n}\n\nglobal.set(\"esc1_ip6_to_ip4\", mapIp6to4);\nglobal.set(\"esc1_recent_dns_v4\", recentV4.slice(-300));\nglobal.set(\"esc1_recent_dns_v6\", recentV6.slice(-300));\nmetrics.dns_ip_objetivo_last = ipObjetivo;\n\nlet servicioLimpio = \"\";\nlet score = 50;\nlet categoriaBloqueo = \"\";\n\nconst adultPatterns = /(porn|xxx|xvideos|xhamster|xnxx|redtube|youporn|pornhub|brazzers|chaturbate)/;\nconst piracyPatterns = /(thepiratebay|1337x|yts\\.|yify|kickass|rarbg|cuevana|pelisplus|repelis|gnula|torrent)/;\n\nif (adultPatterns.test(dominioCrudo)) {\n    servicioLimpio = \"No Autorizado\";\n    categoriaBloqueo = \"adulto\";\n    score = 120;\n    metrics.no_autorizado_detectado_total += 1;\n}\nelse if (piracyPatterns.test(dominioCrudo)) {\n    servicioLimpio = \"No Autorizado\";\n    categoriaBloqueo = \"pirateria\";\n    score = 120;\n    metrics.no_autorizado_detectado_total += 1;\n}\nelse if (/dns\\.google|cloudflare-dns\\.com|one\\.one\\.one\\.one|dns\\.quad9\\.net|nextdns\\.io|doh\\./.test(dominioCrudo)) {\n    servicioLimpio = \"DNS Privado\";\n    score = 15;\n    metrics.dns_privado_detectado_total += 1;\n}\nelse if (/tiktok|tiktokcdn|byteoversea|bytedance|musical\\.ly|ibytedtos/.test(dominioCrudo)) {\n    servicioLimpio = \"TikTok\";\n    score = 110;\n}\nelse if (/instagram|cdninstagram|igcdn|igsn|i\\.instagram|ig\\.me|threads\\.net/.test(dominioCrudo)) {\n    servicioLimpio = \"Instagram\";\n    score = 110;\n}\nelse if (/whatsapp|whatsapp\\.net|wa\\.me/.test(dominioCrudo)) {\n    servicioLimpio = \"WhatsApp\";\n    score = 110;\n}\nelse if (/facebook|fbcdn|fbsbx|fb\\.com|messenger/.test(dominioCrudo)) {\n    servicioLimpio = \"Facebook\";\n    score = 110;\n}\nelse if (/youtube|youtu\\.be|googlevideo|ytimg/.test(dominioCrudo)) {\n    servicioLimpio = \"YouTube\";\n    score = 110;\n}\nelse if (dominioCrudo.includes(\"epn.edu.ec\")) {\n    if (dominioCrudo.includes(\"aulasvirtuales\")) {\n        servicioLimpio = \"Aulas Virtuales EPN\";\n        score = 160;\n    } else {\n        servicioLimpio = \"Portal EPN\";\n        score = 145;\n    }\n}\nelse if (/google\\.com|googleapis\\.com|gstatic\\.com|gvt1\\.com|1e100\\.net/.test(dominioCrudo)) {\n    servicioLimpio = \"Google\";\n    score = 30;\n}\nelse {\n    servicioLimpio = dominioBase(dominioCrudo);\n    score = 60;\n}\n\nconst stateKey = \"trafico_estado_\" + ipObjetivo;\nconst holdMs = 8000;\nconst minInitialScore = 30;\nlet estadoPrevio = global.get(stateKey);\n\nlet actualizar = false;\nif (!estadoPrevio) {\n    actualizar = score >= minInitialScore;\n} else if (score > (estadoPrevio.score || 0)) {\n    actualizar = true;\n} else if (score === (estadoPrevio.score || 0) && servicioLimpio !== estadoPrevio.servicio) {\n    actualizar = true;\n} else if (servicioLimpio === estadoPrevio.servicio) {\n    if (score >= 50 || (estadoPrevio.score || 0) >= 50) {\n        actualizar = true;\n    } else if (score >= minInitialScore && (now - (estadoPrevio.ts || 0)) > holdMs) {\n        actualizar = true;\n    }\n} else if ((now - (estadoPrevio.ts || 0)) > holdMs && score >= 50) {\n    actualizar = true;\n}\n\nlet estadoActual = estadoPrevio;\nif (actualizar) {\n    estadoActual = {\n        servicio: servicioLimpio,\n        dominio_real: dominioCrudo,\n        score: score,\n        categoria_bloqueo: categoriaBloqueo || undefined,\n        ts: now\n    };\n\n    global.set(stateKey, estadoActual);\n    global.set(\"sitio_\" + ipObjetivo, estadoActual.servicio);\n    global.set(\"dns_ts_\" + ipObjetivo, now);\n\n    if (ipOrigen && ipOrigen !== ipObjetivo) {\n        global.set(\"sitio_\" + ipOrigen, estadoActual.servicio);\n        global.set(\"dns_ts_\" + ipOrigen, now);\n    }\n\n    if (ipRaw && ipRaw !== ipObjetivo && ipRaw !== ipOrigen) {\n        global.set(\"sitio_\" + ipRaw, estadoActual.servicio);\n        global.set(\"dns_ts_\" + ipRaw, now);\n    }\n}\nelse {\n    const prevScore = estadoActual && typeof estadoActual.score === \"number\" ? estadoActual.score : 0;\n    const prevTs = estadoActual && estadoActual.ts ? estadoActual.ts : 0;\n\n    if (prevScore < 50 && score < 50 && (now - prevTs) > holdMs) {\n        estadoActual = {\n            servicio: \"En espera de trafico util...\",\n            dominio_real: dominioCrudo,\n            score: 0,\n            ts: now\n        };\n\n        global.set(stateKey, estadoActual);\n        global.set(\"sitio_\" + ipObjetivo, estadoActual.servicio);\n        global.set(\"dns_ts_\" + ipObjetivo, now);\n\n        if (ipOrigen && ipOrigen !== ipObjetivo) {\n            global.set(\"sitio_\" + ipOrigen, estadoActual.servicio);\n            global.set(\"dns_ts_\" + ipOrigen, now);\n        }\n    } else if (!estadoActual) {\n        estadoActual = {\n            servicio: \"En espera de trafico util...\",\n            dominio_real: dominioCrudo,\n            score: 0,\n            ts: now\n        };\n\n        global.set(stateKey, estadoActual);\n        global.set(\"sitio_\" + ipObjetivo, estadoActual.servicio);\n        global.set(\"dns_ts_\" + ipObjetivo, now);\n\n        if (ipOrigen && ipOrigen !== ipObjetivo) {\n            global.set(\"sitio_\" + ipOrigen, estadoActual.servicio);\n            global.set(\"dns_ts_\" + ipOrigen, now);\n        }\n    }\n}\n\nmetrics.dns_events_validos += 1;\nmetrics.dns_events_last_ts = now;\nmetrics.dns_query_type_last = queryType || null;\nmetrics.dns_domain_last = dominioCrudo;\nmetrics.dns_ip_last = ipOrigen;\n\nif (msg.expected_service) {\n    metrics.sim_tests_total += 1;\n    const esperado = (msg.expected_service || \"\").toString().trim().toLowerCase();\n    const actual = ((estadoActual ? estadoActual.servicio : servicioLimpio) || \"\").toString().trim().toLowerCase();\n    if (esperado && actual && esperado === actual) {\n        metrics.sim_tests_ok += 1;\n    }\n}\n\nmsg.payload = {\n    ip: ipObjetivo,\n    ip_origen: ipOrigen,\n    ip_raw: ipRaw,\n    query_type: queryType || null,\n    dominio_real: dominioCrudo,\n    servicio: estadoActual ? estadoActual.servicio : servicioLimpio,\n    servicio_detectado: servicioLimpio,\n    score_detectado: score,\n    categoria_bloqueo: categoriaBloqueo || null\n};\n\nlet msgUi = null;\nconst cachedDevices = global.get(\"esc1_last_devices\");\nif (Array.isArray(cachedDevices) && cachedDevices.length > 0) {\n    const lastUiPushTs = Number(global.get(\"esc1_ui_last_push_ts\") || 0);\n    const uiThrottleMs = 500;\n\n    if ((now - lastUiPushTs) >= uiThrottleMs) {\n        const refreshedDevices = cachedDevices.map((dev) => {\n            const ipDev = (dev && dev.IP ? dev.IP : \"\").toString();\n            if (!ipDev) return dev;\n\n            const sitio =\n                global.get(\"sitio_\" + ipDev) ||\n                global.get(\"sitio_::ffff:\" + ipDev) ||\n                dev.sitio_actual ||\n                \"En espera de trafico...\";\n\n            return Object.assign({}, dev, { sitio_actual: sitio });\n        });\n\n        global.set(\"esc1_last_devices\", refreshedDevices);\n        global.set(\"esc1_ui_last_push_ts\", now);\n        metrics.ui_push_total += 1;\n        msgUi = { payload: refreshedDevices };\n    }\n}\n\nsaveMetrics();\nreturn [msg, msgUi];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 300,
+        "wires": [
+            [
+                "a4a94b09cf259415"
+            ],
+            [
+                "d5f7cb97419466c8"
+            ]
+        ]
+    },
+    {
+        "id": "a4a94b09cf259415",
+        "type": "debug",
+        "z": "3224d6c38c360858",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1160,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "inj_mount_init_esc1",
+        "type": "inject",
+        "z": "3224d6c38c360858",
+        "name": "ESC1 Init Montaje",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "2",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 2300,
+        "wires": [
+            [
+                "func_mount_init_esc1"
+            ]
+        ]
+    },
+    {
+        "id": "func_mount_init_esc1",
+        "type": "function",
+        "z": "3224d6c38c360858",
+        "name": "ESC1 Set Montaje Start",
+        "func": "let metrics = global.get('esc1_metrics') || {};\nif (!metrics.mount_start_ts) {\n    metrics.mount_start_ts = Date.now();\n    global.set('esc1_metrics', metrics);\n}\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 2300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "inj_privacy_cleanup_esc1",
+        "type": "inject",
+        "z": "3224d6c38c360858",
+        "name": "ESC1 Privacy Cleanup",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "600",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "10",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 2380,
+        "wires": [
+            [
+                "func_privacy_cleanup_esc1"
+            ]
+        ]
+    },
+    {
+        "id": "func_privacy_cleanup_esc1",
+        "type": "function",
+        "z": "3224d6c38c360858",
+        "name": "ESC1 Privacy Purge",
+        "func": "const ttlMs = 2 * 60 * 60 * 1000;\nconst now = Date.now();\n\nlet nameMap = global.get('deviceNames') || {};\nconst before = Object.keys(nameMap).length;\nconst cleaned = {};\n\nfor (const [ip, val] of Object.entries(nameMap)) {\n    if (typeof val === 'string') {\n        cleaned[ip] = { alias: val, ts: now, consent: true };\n        continue;\n    }\n\n    if (val && typeof val === 'object') {\n        const ts = Number(val.ts || 0);\n        const alias = (val.alias || val.nombre || '').toString();\n        if (alias && (!ts || (now - ts) <= ttlMs)) {\n            cleaned[ip] = { alias: alias, ts: ts || now, consent: !!val.consent };\n        }\n    }\n}\n\nglobal.set('deviceNames', cleaned);\n\nconst removed = before - Object.keys(cleaned).length;\nlet metrics = global.get('esc1_metrics') || {};\nmetrics.privacy_last_purge_ts = now;\nmetrics.privacy_last_removed = removed;\nmetrics.privacy_purges_total = Number(metrics.privacy_purges_total || 0) + 1;\n\nglobal.set('esc1_metrics', metrics);\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 2380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "inj_emit_metrics_esc1",
+        "type": "inject",
+        "z": "3224d6c38c360858",
+        "name": "ESC1 Emit Metricas",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "6",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 2460,
+        "wires": [
+            [
+                "func_emit_metrics_esc1"
+            ]
+        ]
+    },
+    {
+        "id": "func_emit_metrics_esc1",
+        "type": "function",
+        "z": "3224d6c38c360858",
+        "name": "ESC1 Emitir Metricas",
+        "func": "function p95(arr) {\n    if (!Array.isArray(arr) || arr.length === 0) return null;\n    const sorted = arr.slice().sort((a,b) => a-b);\n    const idx = Math.min(sorted.length - 1, Math.ceil(0.95 * sorted.length) - 1);\n    return sorted[idx];\n}\n\nfunction avg(arr) {\n    if (!Array.isArray(arr) || arr.length === 0) return null;\n    return Math.round(arr.reduce((a,b)=>a+b,0) / arr.length);\n}\n\nfunction maskIP(ip) {\n    const parts = (ip || '').split('.');\n    if (parts.length === 4) return parts[0] + '.' + parts[1] + '.' + parts[2] + '.xxx';\n    return 'anon';\n}\n\nlet metrics = global.get('esc1_metrics') || {};\nconst dnsSamples = Array.isArray(metrics.dns_latency_samples_ms) ? metrics.dns_latency_samples_ms : [];\nconst discoverySamples = Array.isArray(metrics.discovery_delay_samples_ms) ? metrics.discovery_delay_samples_ms : [];\n\nconst simTotal = Number(metrics.sim_tests_total || 0);\nconst simOk = Number(metrics.sim_tests_ok || 0);\nconst precision = simTotal > 0 ? Math.round((simOk * 10000) / simTotal) / 100 : null;\n\nlet anonPreview = [];\nconst nameMap = global.get('deviceNames') || {};\nfor (const [ip, val] of Object.entries(nameMap)) {\n    const alias = typeof val === 'string' ? val : (val && (val.alias || val.nombre)) || 'Invitado';\n    anonPreview.push({ ip: maskIP(ip), alias: alias });\n}\n\nmsg.payload = {\n    mode_actual: 'real',\n    scan_total: Number(metrics.scan_total || 0),\n    hosts_visible: Number(metrics.hosts_visible || 0),\n    hosts_new_total: Number(metrics.hosts_new_total || 0),\n    last_scan_duration_ms: Number(metrics.last_scan_duration_ms || 0),\n    mount_time_ms: Number(metrics.mount_time_ms || 0),\n    dns_latency_p95_ms: p95(dnsSamples),\n    dns_latency_avg_ms: avg(dnsSamples),\n    discovery_delay_avg_ms: avg(discoverySamples),\n    dns_events_total: Number(metrics.dns_events_total || 0),\n    dns_events_validos: Number(metrics.dns_events_validos || 0),\n    dns_events_descartados: Number(metrics.dns_events_descartados || 0),\n    dns_events_last_ts: Number(metrics.dns_events_last_ts || 0),\n    dns_query_type_last: metrics.dns_query_type_last || null,\n    dns_domain_last: metrics.dns_domain_last || null,\n    dns_ip_last: metrics.dns_ip_last || null,\n    dns_ip_objetivo_last: metrics.dns_ip_objetivo_last || null,\n    dns_ipv6_total: Number(metrics.dns_ipv6_total || 0),\n    dns_ipv6_mapped_total: Number(metrics.dns_ipv6_mapped_total || 0),\n    dns_ipv6_unmapped_total: Number(metrics.dns_ipv6_unmapped_total || 0),\n    dns_privado_detectado_total: Number(metrics.dns_privado_detectado_total || 0),\n    no_autorizado_detectado_total: Number(metrics.no_autorizado_detectado_total || 0),\n    ui_push_total: Number(metrics.ui_push_total || 0),\n    sim_precision_pct: precision,\n    sim_tests_total: simTotal,\n    sim_tests_ok: simOk,\n    privacy_last_removed: Number(metrics.privacy_last_removed || 0),\n    privacy_purges_total: Number(metrics.privacy_purges_total || 0),\n    anon_count: anonPreview.length,\n    anon_preview: anonPreview.slice(0, 12),\n    last_update_ts: Date.now()\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 2460,
+        "wires": [
+            [
+                "tmpl_metrics_esc1"
+            ]
+        ]
+    },
+    {
+        "id": "tmpl_metrics_esc1",
+        "type": "ui_template",
+        "z": "3224d6c38c360858",
+        "group": "group_metrics_esc1",
+        "name": "ESC1 Panel Metricas",
+        "order": 1,
+        "width": "24",
+        "height": "12",
+        "format": "<style>\n  .esc1m-wrap {\n    font-family: 'Segoe UI', Tahoma, sans-serif;\n    border: 1px solid #d4e4ef;\n    border-radius: 14px;\n    padding: 14px;\n    background: linear-gradient(180deg, #f8fcff 0%, #ffffff 100%);\n    box-shadow: 0 4px 12px rgba(20, 72, 112, 0.08);\n  }\n  .esc1m-head {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    gap: 10px;\n    margin-bottom: 10px;\n  }\n  .esc1m-head h3 {\n    margin: 0;\n    color: #113b5c;\n    font-size: 1.08rem;\n  }\n  .esc1m-badge {\n    border-radius: 999px;\n    padding: 4px 10px;\n    font-size: 0.78rem;\n    font-weight: 700;\n    background: #d1e7dd;\n    color: #0f5132;\n    border: 1px solid #8fd1b4;\n    letter-spacing: 0.03em;\n  }\n  .esc1m-grid {\n    display: grid;\n    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));\n    gap: 10px;\n    margin-bottom: 12px;\n  }\n  .esc1m-kpi {\n    background: #ffffff;\n    border: 1px solid #d7e7f2;\n    border-radius: 10px;\n    padding: 10px;\n  }\n  .esc1m-kpi .label {\n    font-size: 0.78rem;\n    color: #4f6d83;\n    text-transform: uppercase;\n    letter-spacing: 0.03em;\n  }\n  .esc1m-kpi .value {\n    font-size: 1.05rem;\n    font-weight: 700;\n    color: #133a59;\n    margin-top: 3px;\n  }\n  .esc1m-table {\n    width: 100%;\n    border-collapse: collapse;\n    font-size: 13px;\n    margin-top: 6px;\n  }\n  .esc1m-table th,\n  .esc1m-table td {\n    border: 1px solid #dbe8f2;\n    padding: 6px 8px;\n    text-align: left;\n  }\n  .esc1m-table th {\n    background: #eef6fc;\n    color: #1d4d73;\n  }\n  .esc1m-pre {\n    background: #f6fbff;\n    border: 1px solid #d7e7f2;\n    border-radius: 8px;\n    padding: 8px;\n    max-height: 180px;\n    overflow: auto;\n    margin-top: 8px;\n    font-size: 12px;\n  }\n</style>\n\n<div class=\"esc1m-wrap\">\n  <div class=\"esc1m-head\">\n    <h3>ESC1 Metricas de Cumplimiento</h3>\n    <span class=\"esc1m-badge\">Modo operativo: REAL</span>\n  </div>\n\n  <div class=\"esc1m-grid\">\n    <div class=\"esc1m-kpi\"><div class=\"label\">Scans</div><div class=\"value\">{{msg.payload.scan_total}}</div></div>\n    <div class=\"esc1m-kpi\"><div class=\"label\">Hosts visibles</div><div class=\"value\">{{msg.payload.hosts_visible}}</div></div>\n    <div class=\"esc1m-kpi\"><div class=\"label\">No autorizado</div><div class=\"value\">{{msg.payload.no_autorizado_detectado_total}}</div></div>\n    <div class=\"esc1m-kpi\"><div class=\"label\">DNS privado</div><div class=\"value\">{{msg.payload.dns_privado_detectado_total}}</div></div>\n    <div class=\"esc1m-kpi\"><div class=\"label\">Anonimizados</div><div class=\"value\">{{msg.payload.anon_count}}</div></div>\n  </div>\n\n  <table class=\"esc1m-table\">\n    <tr><th>Metrica</th><th>Valor</th><th>Metrica</th><th>Valor</th></tr>\n    <tr><td>Duracion scan (ms)</td><td>{{msg.payload.last_scan_duration_ms}}</td><td>Montaje (ms)</td><td>{{msg.payload.mount_time_ms}}</td></tr>\n    <tr><td>Latencia DNS p95 (ms)</td><td>{{msg.payload.dns_latency_p95_ms}}</td><td>Latencia DNS promedio (ms)</td><td>{{msg.payload.dns_latency_avg_ms}}</td></tr>\n    <tr><td>Descubrimiento promedio (ms)</td><td>{{msg.payload.discovery_delay_avg_ms}}</td><td>Eventos DNS</td><td>{{msg.payload.dns_events_total}}</td></tr>\n    <tr><td>Purgas privacidad</td><td>{{msg.payload.privacy_purges_total}}</td><td>Removidos ultima purga</td><td>{{msg.payload.privacy_last_removed}}</td></tr>\n  </table>\n\n  <h4 style=\"margin:10px 0 4px 0;color:#1d4d73;\">Vista anonimizada (muestra)</h4>\n  <pre class=\"esc1m-pre\">{{msg.payload.anon_preview | json}}</pre>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 720,
+        "y": 2460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "http_metrics_esc1",
+        "type": "http in",
+        "z": "3224d6c38c360858",
+        "name": "ESC1 API Metricas",
+        "url": "/esc1/metrics",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 190,
+        "y": 2540,
+        "wires": [
+            [
+                "func_http_metrics_esc1"
+            ]
+        ]
+    },
+    {
+        "id": "func_http_metrics_esc1",
+        "type": "function",
+        "z": "3224d6c38c360858",
+        "name": "ESC1 Build Metrics API",
+        "func": "function p95(arr) {\n    if (!Array.isArray(arr) || arr.length === 0) return null;\n    const sorted = arr.slice().sort((a,b) => a-b);\n    const idx = Math.min(sorted.length - 1, Math.ceil(0.95 * sorted.length) - 1);\n    return sorted[idx];\n}\nfunction avg(arr) {\n    if (!Array.isArray(arr) || arr.length === 0) return null;\n    return Math.round(arr.reduce((a,b)=>a+b,0) / arr.length);\n}\nfunction maskIP(ip) {\n    const parts = (ip || '').split('.');\n    if (parts.length === 4) return parts[0] + '.' + parts[1] + '.' + parts[2] + '.xxx';\n    return 'anon';\n}\n\nlet metrics = global.get('esc1_metrics') || {};\nconst dnsSamples = Array.isArray(metrics.dns_latency_samples_ms) ? metrics.dns_latency_samples_ms : [];\nconst discoverySamples = Array.isArray(metrics.discovery_delay_samples_ms) ? metrics.discovery_delay_samples_ms : [];\n\nconst simTotal = Number(metrics.sim_tests_total || 0);\nconst simOk = Number(metrics.sim_tests_ok || 0);\nconst precision = simTotal > 0 ? Math.round((simOk * 10000) / simTotal) / 100 : null;\n\nlet anonPreview = [];\nconst nameMap = global.get('deviceNames') || {};\nfor (const [ip, val] of Object.entries(nameMap)) {\n    const alias = typeof val === 'string' ? val : (val && (val.alias || val.nombre)) || 'Invitado';\n    anonPreview.push({ ip: maskIP(ip), alias: alias });\n}\n\nmsg.payload = {\n    mode_actual: 'real',\n    scan_total: Number(metrics.scan_total || 0),\n    hosts_visible: Number(metrics.hosts_visible || 0),\n    hosts_new_total: Number(metrics.hosts_new_total || 0),\n    last_scan_duration_ms: Number(metrics.last_scan_duration_ms || 0),\n    mount_time_ms: Number(metrics.mount_time_ms || 0),\n    dns_latency_p95_ms: p95(dnsSamples),\n    dns_latency_avg_ms: avg(dnsSamples),\n    discovery_delay_avg_ms: avg(discoverySamples),\n    dns_events_total: Number(metrics.dns_events_total || 0),\n    dns_events_validos: Number(metrics.dns_events_validos || 0),\n    dns_events_descartados: Number(metrics.dns_events_descartados || 0),\n    dns_events_last_ts: Number(metrics.dns_events_last_ts || 0),\n    dns_query_type_last: metrics.dns_query_type_last || null,\n    dns_domain_last: metrics.dns_domain_last || null,\n    dns_ip_last: metrics.dns_ip_last || null,\n    dns_ip_objetivo_last: metrics.dns_ip_objetivo_last || null,\n    dns_ipv6_total: Number(metrics.dns_ipv6_total || 0),\n    dns_ipv6_mapped_total: Number(metrics.dns_ipv6_mapped_total || 0),\n    dns_ipv6_unmapped_total: Number(metrics.dns_ipv6_unmapped_total || 0),\n    dns_privado_detectado_total: Number(metrics.dns_privado_detectado_total || 0),\n    no_autorizado_detectado_total: Number(metrics.no_autorizado_detectado_total || 0),\n    ui_push_total: Number(metrics.ui_push_total || 0),\n    sim_precision_pct: precision,\n    sim_tests_total: simTotal,\n    sim_tests_ok: simOk,\n    privacy_last_removed: Number(metrics.privacy_last_removed || 0),\n    privacy_purges_total: Number(metrics.privacy_purges_total || 0),\n    anon_count: anonPreview.length,\n    anon_preview: anonPreview.slice(0, 12),\n    last_update_ts: Date.now()\n};\nmsg.headers = {'Content-Type': 'application/json'};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 2540,
+        "wires": [
+            [
+                "http_resp_metrics_esc1"
+            ]
+        ]
+    },
+    {
+        "id": "http_resp_metrics_esc1",
+        "type": "http response",
+        "z": "3224d6c38c360858",
+        "name": "ESC1 API Metrics Resp",
+        "statusCode": "",
+        "headers": {},
+        "x": 710,
+        "y": 2540,
+        "wires": []
+    },
+    {
+        "id": "exec_toggle_internet_mode",
+        "type": "exec",
+        "z": "3224d6c38c360858",
+        "command": "",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Exec Toggle Internet",
+        "x": 720,
+        "y": 1020,
+        "wires": [
+            [
+                "func_toggle_internet_ok"
+            ],
+            [
+                "func_toggle_internet_err"
+            ],
+            [
+                "func_toggle_internet_ok"
+            ]
+        ]
+    },
+    {
+        "id": "func_toggle_internet_ok",
+        "type": "function",
+        "z": "3224d6c38c360858",
+        "name": "Estado OK Internet",
+        "func": "const out=(msg.payload||'').toString();\nmsg.payload={ok:true,text:'Modo de Internet aplicado correctamente',detail:out.slice(0,220)};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 990,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "func_toggle_internet_err",
+        "type": "function",
+        "z": "3224d6c38c360858",
+        "name": "Estado Error Internet",
+        "func": "const raw=(msg.payload||'').toString();\nconst t=raw.trim();\nconst l=t.toLowerCase();\nconst benign=['pseudo-terminal will not be allocated','udhcpc: started','udhcpc: broadcasting discover','udhcpc: no lease, failing'];\nconst lines=t.split(/\\r?\\n/).map(x=>x.trim()).filter(Boolean);\nconst onlyBenign=lines.length>0&&lines.every(x=>benign.some(b=>x.toLowerCase().includes(b)));\nconst hard=/permission denied|not found|no se encontraron backups|error|failed|fatal/.test(l)&&!onlyBenign;\nmsg.payload=hard?{ok:false,text:'Error al aplicar modo de Internet',detail:t.slice(0,220)}:{ok:true,text:'Modo aplicado (con advertencias no criticas)',detail:t.slice(0,220)};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "btn_internet_enable",
+        "type": "ui_button",
+        "z": "3224d6c38c360858",
+        "name": "Internet ON",
+        "group": "group_config",
+        "order": 2,
+        "width": "6",
+        "height": "1",
+        "passthru": false,
+        "label": "HABILITAR INTERNET",
+        "tooltip": "Activa salida a internet (modo normal)",
+        "color": "white",
+        "bgcolor": "#10b981",
+        "className": "",
+        "icon": "check",
+        "payload": "enable",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 170,
+        "y": 940,
+        "wires": [
+            [
+                "func_internet_enable"
+            ]
+        ]
+    },
+    {
+        "id": "func_internet_enable",
+        "type": "function",
+        "z": "3224d6c38c360858",
+        "name": "Aplicar Internet ON",
+        "func": "const cmd=\"ROUTER_HOST=192.168.1.1 ROUTER_USER=root ROUTER_PASS='DTIC2025B_jp' bash /data/scripts/esc1_rollback_openwrt_policy.sh\";\nglobal.set('esc1_internet_enabled',true);\nreturn [{payload:cmd},{payload:{ok:true,text:'Aplicando: INTERNET HABILITADA...',mode:'INTERNET HABILITADA'}}];",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 940,
+        "wires": [
+            [
+                "exec_toggle_internet_mode"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "btn_internet_block",
+        "type": "ui_button",
+        "z": "3224d6c38c360858",
+        "name": "Internet OFF",
+        "group": "group_config",
+        "order": 3,
+        "width": "6",
+        "height": 1,
+        "passthru": true,
+        "label": "BLOQUEAR INTERNET",
+        "tooltip": "Bloquea salida a internet",
+        "color": "white",
+        "bgcolor": "#ef4444",
+        "className": "",
+        "icon": "block",
+        "payload": "block",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 190,
+        "y": 1080,
+        "wires": [
+            [
+                "func_internet_block"
+            ]
+        ]
+    },
+    {
+        "id": "func_internet_block",
+        "type": "function",
+        "z": "3224d6c38c360858",
+        "name": "Aplicar Internet OFF",
+        "func": "const cmd=\"ROUTER_HOST=192.168.1.1 ROUTER_USER=root ROUTER_PASS='DTIC2025B_jp' bash /data/scripts/esc1_apply_openwrt_policy.sh\";\nglobal.set('esc1_internet_enabled',false);\nreturn [{payload:cmd},{payload:{ok:true,text:'Aplicando: INTERNET BLOQUEADA...',mode:'INTERNET BLOQUEADA'}}];",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 1120,
+        "wires": [
+            [
+                "exec_toggle_internet_mode"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "f1b902d121ac8870",
+        "type": "comment",
+        "z": "3224d6c38c360858",
+        "name": "HEADER + FOOTER + SLIDEBAR",
+        "info": "",
+        "x": 1480,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "bbbe4957e995427f",
+        "type": "ui_template",
+        "z": "3224d6c38c360858",
+        "group": "group_config",
+        "name": "",
+        "order": 5,
+        "width": 1,
+        "height": 1,
+        "format": "<script>\n    (function() {\n    // 1. Evitar que se duplique el menú si recargamos la página\n    if (document.getElementById('demo-global-shell')) return;\n\n    // 2. Crear un contenedor maestro\n    var shell = document.createElement('div');\n    shell.id = 'demo-global-shell';\n    \n    // 3. Insertar todo nuestro diseño Clean Tech\n    shell.innerHTML = `\n        <style>\n            :root {\n                --h: 70px;\n                --s: 260px;\n                --f: 40px;\n                --tech-blue: #0ea5e9;\n                --tech-blue-dark: #0284c7;\n                --text-main: #1e293b;\n                --text-muted: #64748b;\n            }\n        \n            /* --- FONDO BASE DE LA PANTALLA --- */\n            body,\n            html {\n                background-color: #f8fafc !important;\n                margin: 0;\n            }\n        \n            /* --- ANIQUILACIÓN DEL MENÚ DE NODE-RED --- */\n            md-toolbar.nr-dashboard-toolbar {\n                display: none !important;\n            }\n        \n            md-sidenav,\n            md-backdrop {\n                display: none !important;\n            }\n        \n            /* --- FUSIÓN TRANSPARENTE DEL ÁREA CENTRAL --- */\n            md-content.md-default-theme,\n            md-content {\n                background-color: transparent !important;\n            }\n        \n            /* =========================================\n               EL FIX DEL SOLAPAMIENTO (OVERLAP FIX)\n               Aquí empujamos las gráficas y recalculamos el tamaño\n            ========================================= */\n            .nr-dashboard-view {\n                padding-top: 90px !important;\n                margin-left: 270px !important;\n                /* Empuja todo el contenido a la derecha */\n                width: calc(100vw - 280px) !important;\n                /* Le resta el espacio del menú al ancho total */\n                padding-right: 20px !important;\n                padding-bottom: 60px !important;\n                box-sizing: border-box !important;\n            }\n        \n            /* --- ESTILOS DEL DISEÑO DE TU SHELL --- */\n            .demo-shell-wrap {\n                position: fixed;\n                inset: 0;\n                z-index: 5;\n                font-family: 'Segoe UI', sans-serif;\n                pointer-events: none;\n            }\n        \n            .demo-shell-wrap * {\n                pointer-events: auto;\n            }\n        \n            .demo-head {\n                height: var(--h);\n                background: linear-gradient(90deg, #ffffff 0%, #f1f5f9 100%);\n                border-bottom: 2px solid var(--tech-blue);\n                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);\n                display: flex;\n                align-items: center;\n                justify-content: space-between;\n                padding: 0 24px;\n                color: var(--text-main);\n            }\n        \n            .brand-title {\n                font-weight: 800;\n                font-size: 1.1rem;\n                letter-spacing: 2px;\n            }\n        \n            .brand-title span {\n                color: var(--tech-blue);\n            }\n        \n            .status-badge {\n                display: flex;\n                align-items: center;\n                gap: 8px;\n                font-family: monospace;\n                font-size: 0.9rem;\n                background: rgba(14, 165, 233, 0.1);\n                padding: 5px 12px;\n                border-radius: 4px;\n                color: var(--tech-blue-dark);\n                font-weight: 600;\n            }\n        \n            .dot {\n                width: 8px;\n                height: 8px;\n                background-color: var(--tech-blue);\n                border-radius: 50%;\n                animation: pulse 2s infinite;\n            }\n        \n            /* =========================================\n               EL MENÚ TOTALMENTE TRANSPARENTE\n            ========================================= */\n            .demo-side {\n                position: fixed;\n                top: calc(var(--h) + 15px);\n                left: 15px;\n                bottom: calc(var(--f) + 15px);\n                width: calc(var(--s) - 30px);\n                background: transparent !important;\n                /* Totalmente transparente */\n                border: none !important;\n                /* Sin bordes */\n                box-shadow: none !important;\n                /* Sin sombras */\n                border-right: 2px dashed rgba(0, 0, 0, 0.06) !important;\n                /* Una línea punteada muy sutil para separar el área */\n                padding: 20px 12px;\n                display: flex;\n                flex-direction: column;\n                gap: 10px;\n            }\n        \n            .demo-side a {\n                text-decoration: none;\n            }\n        \n            .demo-item {\n                color: var(--text-muted);\n                padding: 12px 15px;\n                font-size: 0.95rem;\n                font-weight: 600;\n                cursor: pointer;\n                transition: all 0.3s ease;\n                position: relative;\n                clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);\n            }\n        \n            .demo-item::before {\n                content: '';\n                position: absolute;\n                left: 0;\n                top: 0;\n                bottom: 0;\n                width: 4px;\n                background: #cbd5e1;\n                transition: all 0.3s ease;\n            }\n        \n            .demo-item:hover,\n            .demo-item.active {\n                background: rgba(14, 165, 233, 0.08);\n                color: var(--tech-blue-dark);\n                transform: translateX(5px);\n            }\n        \n            .demo-item:hover::before,\n            .demo-item.active::before {\n                background: var(--tech-blue);\n            }\n        \n            .demo-item span {\n                font-family: monospace;\n                opacity: 0.6;\n                margin-right: 8px;\n                color: var(--tech-blue);\n            }\n        \n            .demo-foot {\n                position: fixed;\n                left: 0;\n                right: 0;\n                bottom: 0;\n                height: var(--f);\n                background: #ffffff;\n                border-top: 1px solid rgba(0, 0, 0, 0.08);\n                display: flex;\n                align-items: center;\n                justify-content: center;\n                font-family: monospace;\n                font-size: 13px;\n                font-weight: 600;\n                color: var(--text-muted);\n            }\n        \n            .terminal-cursor {\n                display: inline-block;\n                width: 8px;\n                height: 15px;\n                background-color: var(--tech-blue);\n                margin-left: 5px;\n                animation: blink 1s step-end infinite;\n            }\n        \n            @keyframes pulse {\n        \n                0%,\n                100% {\n                    transform: scale(0.95);\n                    opacity: 0.8;\n                }\n        \n                50% {\n                    transform: scale(1.2);\n                    opacity: 1;\n                    box-shadow: 0 0 12px rgba(14, 165, 233, 0.6);\n                }\n            }\n        \n            @keyframes blink {\n        \n                0%,\n                100% {\n                    opacity: 1;\n                }\n        \n                50% {\n                    opacity: 0;\n                }\n            }\n        \n            /* =========================================\n               SISTEMA DE DISEÑO: CLEAN TECH V2\n            ========================================= */\n            .nr-dashboard-cardpanel {\n                background: #ffffff !important;\n                border-radius: 12px !important;\n                box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05) !important;\n                border: 1px solid rgba(0, 0, 0, 0.05) !important;\n                padding: 20px !important;\n            }\n        \n            .nr-dashboard-cardpanel md-card {\n                background: transparent !important;\n                box-shadow: none !important;\n                border: none !important;\n                margin: 0 !important;\n                padding: 0 !important;\n            }\n        \n            .nr-dashboard-cardpanel .md-button {\n                height: auto !important;\n                min-height: 45px !important;\n                white-space: normal !important;\n                line-height: 1.2 !important;\n                padding: 10px 15px !important;\n                border-radius: 6px !important;\n                margin-bottom: 8px !important;\n                width: 100% !important;\n                font-weight: 600 !important;\n                text-transform: none !important;\n            }\n        \n            ui-text-input {\n                margin-bottom: 20px !important;\n                display: block !important;\n            }\n        </style>\n\n        <div class=\"demo-shell-wrap\">\n          <div class=\"demo-head\">\n            <div class=\"brand-title\">DEMO-KIT <span>//</span> CIBERSEGURIDAD <span>_</span> ESCENARIO 1</div>\n            <div class=\"status-badge\"><div class=\"dot\"></div> VISTA DEMO</div>\n          </div>\n\n          <div class=\"demo-side\">\n            <a href=\"#!/0\"><div class=\"demo-item active\" id=\"btn-0\"><span>01_</span> Configuración</div></a>\n            <a href=\"#!/1\"><div class=\"demo-item\" id=\"btn-1\"><span>02_</span> QR-WIFI</div></a>\n            <a href=\"#!/2\"><div class=\"demo-item\" id=\"btn-2\"><span>03_</span> QR-Registro</div></a>\n            <a href=\"#!/3\"><div class=\"demo-item\" id=\"btn-3\"><span>04_</span> Auditoría de Usuarios</div></a>\n            <a href=\"#!/4\"><div class=\"demo-item\" id=\"btn-4\"><span>05_</span> Demo de Red 2</div></a>\n          </div>\n\n          <div class=\"demo-foot\">\n            > ROOT@PROYECTO_TI :~ DTIC_ <span class=\"terminal-cursor\"></span>\n          </div>\n        </div>\n    `;\n\n    // 4. Inyectar en el navegador\n    document.body.appendChild(shell);\n\n    // 5. Lógica de Navegación\n    function updateActiveMenu() {\n        var hash = window.location.hash;\n        var buttons = document.querySelectorAll('.demo-item');\n        buttons.forEach(function(btn) { btn.classList.remove('active'); });\n        \n        if(hash.includes('/0')) document.getElementById('btn-0').classList.add('active');\n        else if(hash.includes('/1')) document.getElementById('btn-1').classList.add('active');\n        else if(hash.includes('/2')) document.getElementById('btn-2').classList.add('active');\n        else if(hash.includes('/3')) document.getElementById('btn-3').classList.add('active');\n        else if(hash.includes('/4')) document.getElementById('btn-4').classList.add('active');\n        else document.getElementById('btn-0').classList.add('active');\n    }\n\n    window.addEventListener('hashchange', updateActiveMenu);\n    updateActiveMenu();\n})();\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1480,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5577df8e120ef2df",
+        "type": "inject",
+        "z": "3224d6c38c360858",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "3",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 1400,
+        "wires": [
+            [
+                "eaacd3c027da329b",
+                "1b3648dfc5552d0d",
+                "81ac4ef82a4b2833",
+                "78e6240fdf7b33fd",
+                "d4cab80e37479a2a"
+            ]
+        ]
+    },
+    {
+        "id": "32493fbdbfd2a196",
+        "type": "exec",
+        "z": "3224d6c38c360858",
+        "command": "",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "SSH Router",
+        "x": 690,
+        "y": 1400,
+        "wires": [
+            [
+                "5724148b73167e31",
+                "7df1d08d42abc2a2"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "eaacd3c027da329b",
+        "type": "function",
+        "z": "3224d6c38c360858",
+        "name": "Red Actual",
+        "func": "var routerPass = 'DTIC2025B_jp';\nvar routerIP = '192.168.1.1';\n\n// Comando de lectura de OpenWrt\nvar uciCmd = \"uci get wireless.@wifi-iface[0].ssid\";\n\n// Empaquetamos todo con sshpass, igual que en tu código de escritura\nvar sshFullCmd = `sshpass -p '${routerPass}' ssh -o StrictHostKeyChecking=no root@${routerIP} \"${uciCmd}\"`;\n\nmsg.payload = sshFullCmd;\nreturn msg;",
+        "outputs": 3,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 1400,
+        "wires": [
+            [
+                "32493fbdbfd2a196"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "55058aef29d816e0",
+        "type": "ui_template",
+        "z": "3224d6c38c360858",
+        "group": "group_qr_wifi",
+        "name": "",
+        "order": 5,
+        "width": 1,
+        "height": 1,
+        "format": "<script>\n  (function() {\n    // 1. Evitar que se duplique el menú si recargamos la página\n    if (document.getElementById('demo-global-shell')) return;\n\n    // 2. Crear un contenedor maestro\n    var shell = document.createElement('div');\n    shell.id = 'demo-global-shell';\n    \n    // 3. Insertar todo nuestro diseño Clean Tech\n    shell.innerHTML = `\n        <style>\n            :root {\n                --h: 70px;\n                --s: 260px;\n                --f: 40px;\n                --tech-blue: #0ea5e9;\n                --tech-blue-dark: #0284c7;\n                --text-main: #1e293b;\n                --text-muted: #64748b;\n            }\n        \n            /* --- FONDO BASE DE LA PANTALLA --- */\n            body,\n            html {\n                background-color: #f8fafc !important;\n                margin: 0;\n            }\n        \n            /* --- ANIQUILACIÓN DEL MENÚ DE NODE-RED --- */\n            md-toolbar.nr-dashboard-toolbar {\n                display: none !important;\n            }\n        \n            md-sidenav,\n            md-backdrop {\n                display: none !important;\n            }\n        \n            /* --- FUSIÓN TRANSPARENTE DEL ÁREA CENTRAL --- */\n            md-content.md-default-theme,\n            md-content {\n                background-color: transparent !important;\n            }\n        \n            /* =========================================\n               EL FIX DEL SOLAPAMIENTO (OVERLAP FIX)\n               Aquí empujamos las gráficas y recalculamos el tamaño\n            ========================================= */\n            .nr-dashboard-view {\n                padding-top: 90px !important;\n                margin-left: 270px !important;\n                /* Empuja todo el contenido a la derecha */\n                width: calc(100vw - 280px) !important;\n                /* Le resta el espacio del menú al ancho total */\n                padding-right: 20px !important;\n                padding-bottom: 60px !important;\n                box-sizing: border-box !important;\n            }\n        \n            /* --- ESTILOS DEL DISEÑO DE TU SHELL --- */\n            .demo-shell-wrap {\n                position: fixed;\n                inset: 0;\n                z-index: 5;\n                font-family: 'Segoe UI', sans-serif;\n                pointer-events: none;\n            }\n        \n            .demo-shell-wrap * {\n                pointer-events: auto;\n            }\n        \n            .demo-head {\n                height: var(--h);\n                background: linear-gradient(90deg, #ffffff 0%, #f1f5f9 100%);\n                border-bottom: 2px solid var(--tech-blue);\n                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);\n                display: flex;\n                align-items: center;\n                justify-content: space-between;\n                padding: 0 24px;\n                color: var(--text-main);\n            }\n        \n            .brand-title {\n                font-weight: 800;\n                font-size: 1.1rem;\n                letter-spacing: 2px;\n            }\n        \n            .brand-title span {\n                color: var(--tech-blue);\n            }\n        \n            .status-badge {\n                display: flex;\n                align-items: center;\n                gap: 8px;\n                font-family: monospace;\n                font-size: 0.9rem;\n                background: rgba(14, 165, 233, 0.1);\n                padding: 5px 12px;\n                border-radius: 4px;\n                color: var(--tech-blue-dark);\n                font-weight: 600;\n            }\n        \n            .dot {\n                width: 8px;\n                height: 8px;\n                background-color: var(--tech-blue);\n                border-radius: 50%;\n                animation: pulse 2s infinite;\n            }\n        \n            /* =========================================\n               EL MENÚ TOTALMENTE TRANSPARENTE\n            ========================================= */\n            .demo-side {\n                position: fixed;\n                top: calc(var(--h) + 15px);\n                left: 15px;\n                bottom: calc(var(--f) + 15px);\n                width: calc(var(--s) - 30px);\n                background: transparent !important;\n                /* Totalmente transparente */\n                border: none !important;\n                /* Sin bordes */\n                box-shadow: none !important;\n                /* Sin sombras */\n                border-right: 2px dashed rgba(0, 0, 0, 0.06) !important;\n                /* Una línea punteada muy sutil para separar el área */\n                padding: 20px 12px;\n                display: flex;\n                flex-direction: column;\n                gap: 10px;\n            }\n        \n            .demo-side a {\n                text-decoration: none;\n            }\n        \n            .demo-item {\n                color: var(--text-muted);\n                padding: 12px 15px;\n                font-size: 0.95rem;\n                font-weight: 600;\n                cursor: pointer;\n                transition: all 0.3s ease;\n                position: relative;\n                clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);\n            }\n        \n            .demo-item::before {\n                content: '';\n                position: absolute;\n                left: 0;\n                top: 0;\n                bottom: 0;\n                width: 4px;\n                background: #cbd5e1;\n                transition: all 0.3s ease;\n            }\n        \n            .demo-item:hover,\n            .demo-item.active {\n                background: rgba(14, 165, 233, 0.08);\n                color: var(--tech-blue-dark);\n                transform: translateX(5px);\n            }\n        \n            .demo-item:hover::before,\n            .demo-item.active::before {\n                background: var(--tech-blue);\n            }\n        \n            .demo-item span {\n                font-family: monospace;\n                opacity: 0.6;\n                margin-right: 8px;\n                color: var(--tech-blue);\n            }\n        \n            .demo-foot {\n                position: fixed;\n                left: 0;\n                right: 0;\n                bottom: 0;\n                height: var(--f);\n                background: #ffffff;\n                border-top: 1px solid rgba(0, 0, 0, 0.08);\n                display: flex;\n                align-items: center;\n                justify-content: center;\n                font-family: monospace;\n                font-size: 13px;\n                font-weight: 600;\n                color: var(--text-muted);\n            }\n        \n            .terminal-cursor {\n                display: inline-block;\n                width: 8px;\n                height: 15px;\n                background-color: var(--tech-blue);\n                margin-left: 5px;\n                animation: blink 1s step-end infinite;\n            }\n        \n            @keyframes pulse {\n        \n                0%,\n                100% {\n                    transform: scale(0.95);\n                    opacity: 0.8;\n                }\n        \n                50% {\n                    transform: scale(1.2);\n                    opacity: 1;\n                    box-shadow: 0 0 12px rgba(14, 165, 233, 0.6);\n                }\n            }\n        \n            @keyframes blink {\n        \n                0%,\n                100% {\n                    opacity: 1;\n                }\n        \n                50% {\n                    opacity: 0;\n                }\n            }\n        \n            /* =========================================\n               SISTEMA DE DISEÑO: CLEAN TECH V2\n            ========================================= */\n            .nr-dashboard-cardpanel {\n                background: #ffffff !important;\n                border-radius: 12px !important;\n                box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05) !important;\n                border: 1px solid rgba(0, 0, 0, 0.05) !important;\n                padding: 20px !important;\n            }\n        \n            .nr-dashboard-cardpanel md-card {\n                background: transparent !important;\n                box-shadow: none !important;\n                border: none !important;\n                margin: 0 !important;\n                padding: 0 !important;\n            }\n        \n            .nr-dashboard-cardpanel .md-button {\n                height: auto !important;\n                min-height: 45px !important;\n                white-space: normal !important;\n                line-height: 1.2 !important;\n                padding: 10px 15px !important;\n                border-radius: 6px !important;\n                margin-bottom: 8px !important;\n                width: 100% !important;\n                font-weight: 600 !important;\n                text-transform: none !important;\n            }\n        \n            ui-text-input {\n                margin-bottom: 20px !important;\n                display: block !important;\n            }\n        </style>\n\n        <div class=\"demo-shell-wrap\">\n          <div class=\"demo-head\">\n            <div class=\"brand-title\">DEMO-KIT <span>//</span> CIBERSEGURIDAD <span>_</span> ESCENARIO 1</div>\n            <div class=\"status-badge\"><div class=\"dot\"></div> VISTA DEMO</div>\n          </div>\n\n          <div class=\"demo-side\">\n            <a href=\"#!/0\"><div class=\"demo-item active\" id=\"btn-0\"><span>01_</span> Configuración</div></a>\n            <a href=\"#!/1\"><div class=\"demo-item\" id=\"btn-1\"><span>02_</span> QR-WIFI</div></a>\n            <a href=\"#!/2\"><div class=\"demo-item\" id=\"btn-2\"><span>03_</span> QR-Registro</div></a>\n            <a href=\"#!/3\"><div class=\"demo-item\" id=\"btn-3\"><span>04_</span> Auditoría de Usuarios</div></a>\n            <a href=\"#!/4\"><div class=\"demo-item\" id=\"btn-4\"><span>05_</span> Demo de Red 2</div></a>\n          </div>\n\n          <div class=\"demo-foot\">\n            > ROOT@PROYECTO_TI :~ DTIC_ <span class=\"terminal-cursor\"></span>\n          </div>\n        </div>\n    `;\n\n    // 4. Inyectar en el navegador\n    document.body.appendChild(shell);\n\n    // 5. Lógica de Navegación\n    function updateActiveMenu() {\n        var hash = window.location.hash;\n        var buttons = document.querySelectorAll('.demo-item');\n        buttons.forEach(function(btn) { btn.classList.remove('active'); });\n        \n        if(hash.includes('/0')) document.getElementById('btn-0').classList.add('active');\n        else if(hash.includes('/1')) document.getElementById('btn-1').classList.add('active');\n        else if(hash.includes('/2')) document.getElementById('btn-2').classList.add('active');\n        else if(hash.includes('/3')) document.getElementById('btn-3').classList.add('active');\n        else if(hash.includes('/4')) document.getElementById('btn-4').classList.add('active');\n        else document.getElementById('btn-0').classList.add('active');\n    }\n\n    window.addEventListener('hashchange', updateActiveMenu);\n    updateActiveMenu();\n})();\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1480,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8bb0f87090882caf",
+        "type": "ui_template",
+        "z": "3224d6c38c360858",
+        "group": "c49567e07f41fde3",
+        "name": "",
+        "order": 5,
+        "width": 1,
+        "height": 1,
+        "format": "<script>\n  (function() {\n    // 1. Evitar que se duplique el menú si recargamos la página\n    if (document.getElementById('demo-global-shell')) return;\n\n    // 2. Crear un contenedor maestro\n    var shell = document.createElement('div');\n    shell.id = 'demo-global-shell';\n    \n    // 3. Insertar todo nuestro diseño Clean Tech\n    shell.innerHTML = `\n        <style>\n            :root {\n                --h: 70px;\n                --s: 260px;\n                --f: 40px;\n                --tech-blue: #0ea5e9;\n                --tech-blue-dark: #0284c7;\n                --text-main: #1e293b;\n                --text-muted: #64748b;\n            }\n        \n            /* --- FONDO BASE DE LA PANTALLA --- */\n            body,\n            html {\n                background-color: #f8fafc !important;\n                margin: 0;\n            }\n        \n            /* --- ANIQUILACIÓN DEL MENÚ DE NODE-RED --- */\n            md-toolbar.nr-dashboard-toolbar {\n                display: none !important;\n            }\n        \n            md-sidenav,\n            md-backdrop {\n                display: none !important;\n            }\n        \n            /* --- FUSIÓN TRANSPARENTE DEL ÁREA CENTRAL --- */\n            md-content.md-default-theme,\n            md-content {\n                background-color: transparent !important;\n            }\n        \n            /* =========================================\n               EL FIX DEL SOLAPAMIENTO (OVERLAP FIX)\n               Aquí empujamos las gráficas y recalculamos el tamaño\n            ========================================= */\n            .nr-dashboard-view {\n                padding-top: 90px !important;\n                margin-left: 270px !important;\n                /* Empuja todo el contenido a la derecha */\n                width: calc(100vw - 280px) !important;\n                /* Le resta el espacio del menú al ancho total */\n                padding-right: 20px !important;\n                padding-bottom: 60px !important;\n                box-sizing: border-box !important;\n            }\n        \n            /* --- ESTILOS DEL DISEÑO DE TU SHELL --- */\n            .demo-shell-wrap {\n                position: fixed;\n                inset: 0;\n                z-index: 5;\n                font-family: 'Segoe UI', sans-serif;\n                pointer-events: none;\n            }\n        \n            .demo-shell-wrap * {\n                pointer-events: auto;\n            }\n        \n            .demo-head {\n                height: var(--h);\n                background: linear-gradient(90deg, #ffffff 0%, #f1f5f9 100%);\n                border-bottom: 2px solid var(--tech-blue);\n                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);\n                display: flex;\n                align-items: center;\n                justify-content: space-between;\n                padding: 0 24px;\n                color: var(--text-main);\n            }\n        \n            .brand-title {\n                font-weight: 800;\n                font-size: 1.1rem;\n                letter-spacing: 2px;\n            }\n        \n            .brand-title span {\n                color: var(--tech-blue);\n            }\n        \n            .status-badge {\n                display: flex;\n                align-items: center;\n                gap: 8px;\n                font-family: monospace;\n                font-size: 0.9rem;\n                background: rgba(14, 165, 233, 0.1);\n                padding: 5px 12px;\n                border-radius: 4px;\n                color: var(--tech-blue-dark);\n                font-weight: 600;\n            }\n        \n            .dot {\n                width: 8px;\n                height: 8px;\n                background-color: var(--tech-blue);\n                border-radius: 50%;\n                animation: pulse 2s infinite;\n            }\n        \n            /* =========================================\n               EL MENÚ TOTALMENTE TRANSPARENTE\n            ========================================= */\n            .demo-side {\n                position: fixed;\n                top: calc(var(--h) + 15px);\n                left: 15px;\n                bottom: calc(var(--f) + 15px);\n                width: calc(var(--s) - 30px);\n                background: transparent !important;\n                /* Totalmente transparente */\n                border: none !important;\n                /* Sin bordes */\n                box-shadow: none !important;\n                /* Sin sombras */\n                border-right: 2px dashed rgba(0, 0, 0, 0.06) !important;\n                /* Una línea punteada muy sutil para separar el área */\n                padding: 20px 12px;\n                display: flex;\n                flex-direction: column;\n                gap: 10px;\n            }\n        \n            .demo-side a {\n                text-decoration: none;\n            }\n        \n            .demo-item {\n                color: var(--text-muted);\n                padding: 12px 15px;\n                font-size: 0.95rem;\n                font-weight: 600;\n                cursor: pointer;\n                transition: all 0.3s ease;\n                position: relative;\n                clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);\n            }\n        \n            .demo-item::before {\n                content: '';\n                position: absolute;\n                left: 0;\n                top: 0;\n                bottom: 0;\n                width: 4px;\n                background: #cbd5e1;\n                transition: all 0.3s ease;\n            }\n        \n            .demo-item:hover,\n            .demo-item.active {\n                background: rgba(14, 165, 233, 0.08);\n                color: var(--tech-blue-dark);\n                transform: translateX(5px);\n            }\n        \n            .demo-item:hover::before,\n            .demo-item.active::before {\n                background: var(--tech-blue);\n            }\n        \n            .demo-item span {\n                font-family: monospace;\n                opacity: 0.6;\n                margin-right: 8px;\n                color: var(--tech-blue);\n            }\n        \n            .demo-foot {\n                position: fixed;\n                left: 0;\n                right: 0;\n                bottom: 0;\n                height: var(--f);\n                background: #ffffff;\n                border-top: 1px solid rgba(0, 0, 0, 0.08);\n                display: flex;\n                align-items: center;\n                justify-content: center;\n                font-family: monospace;\n                font-size: 13px;\n                font-weight: 600;\n                color: var(--text-muted);\n            }\n        \n            .terminal-cursor {\n                display: inline-block;\n                width: 8px;\n                height: 15px;\n                background-color: var(--tech-blue);\n                margin-left: 5px;\n                animation: blink 1s step-end infinite;\n            }\n        \n            @keyframes pulse {\n        \n                0%,\n                100% {\n                    transform: scale(0.95);\n                    opacity: 0.8;\n                }\n        \n                50% {\n                    transform: scale(1.2);\n                    opacity: 1;\n                    box-shadow: 0 0 12px rgba(14, 165, 233, 0.6);\n                }\n            }\n        \n            @keyframes blink {\n        \n                0%,\n                100% {\n                    opacity: 1;\n                }\n        \n                50% {\n                    opacity: 0;\n                }\n            }\n        \n            /* =========================================\n               SISTEMA DE DISEÑO: CLEAN TECH V2\n            ========================================= */\n            .nr-dashboard-cardpanel {\n                background: #ffffff !important;\n                border-radius: 12px !important;\n                box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05) !important;\n                border: 1px solid rgba(0, 0, 0, 0.05) !important;\n                padding: 20px !important;\n            }\n        \n            .nr-dashboard-cardpanel md-card {\n                background: transparent !important;\n                box-shadow: none !important;\n                border: none !important;\n                margin: 0 !important;\n                padding: 0 !important;\n            }\n        \n            .nr-dashboard-cardpanel .md-button {\n                height: auto !important;\n                min-height: 45px !important;\n                white-space: normal !important;\n                line-height: 1.2 !important;\n                padding: 10px 15px !important;\n                border-radius: 6px !important;\n                margin-bottom: 8px !important;\n                width: 100% !important;\n                font-weight: 600 !important;\n                text-transform: none !important;\n            }\n        \n            ui-text-input {\n                margin-bottom: 20px !important;\n                display: block !important;\n            }\n        </style>\n\n        <div class=\"demo-shell-wrap\">\n          <div class=\"demo-head\">\n            <div class=\"brand-title\">DEMO-KIT <span>//</span> CIBERSEGURIDAD <span>_</span> ESCENARIO 1</div>\n            <div class=\"status-badge\"><div class=\"dot\"></div> VISTA DEMO</div>\n          </div>\n\n          <div class=\"demo-side\">\n            <a href=\"#!/0\"><div class=\"demo-item active\" id=\"btn-0\"><span>01_</span> Configuración</div></a>\n            <a href=\"#!/1\"><div class=\"demo-item\" id=\"btn-1\"><span>02_</span> QR-WIFI</div></a>\n            <a href=\"#!/2\"><div class=\"demo-item\" id=\"btn-2\"><span>03_</span> QR-Registro</div></a>\n            <a href=\"#!/3\"><div class=\"demo-item\" id=\"btn-3\"><span>04_</span> Auditoría de Usuarios</div></a>\n            <a href=\"#!/4\"><div class=\"demo-item\" id=\"btn-4\"><span>05_</span> Demo de Red 2</div></a>\n          </div>\n\n          <div class=\"demo-foot\">\n            > ROOT@PROYECTO_TI :~ DTIC_ <span class=\"terminal-cursor\"></span>\n          </div>\n        </div>\n    `;\n\n    // 4. Inyectar en el navegador\n    document.body.appendChild(shell);\n\n    // 5. Lógica de Navegación\n    function updateActiveMenu() {\n        var hash = window.location.hash;\n        var buttons = document.querySelectorAll('.demo-item');\n        buttons.forEach(function(btn) { btn.classList.remove('active'); });\n        \n        if(hash.includes('/0')) document.getElementById('btn-0').classList.add('active');\n        else if(hash.includes('/1')) document.getElementById('btn-1').classList.add('active');\n        else if(hash.includes('/2')) document.getElementById('btn-2').classList.add('active');\n        else if(hash.includes('/3')) document.getElementById('btn-3').classList.add('active');\n        else if(hash.includes('/4')) document.getElementById('btn-4').classList.add('active');\n        else document.getElementById('btn-0').classList.add('active');\n    }\n\n    window.addEventListener('hashchange', updateActiveMenu);\n    updateActiveMenu();\n})();\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1480,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7df1d08d42abc2a2",
+        "type": "debug",
+        "z": "3224d6c38c360858",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 940,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "5724148b73167e31",
+        "type": "function",
+        "z": "3224d6c38c360858",
+        "name": "Limpieza de salto de linea",
+        "func": "if (msg.payload) {\n    // 1. Convertimos a texto\n    var texto = msg.payload.toString();\n    \n    // 2. Destruimos todos los saltos de línea (\\n) y retornos de carro (\\r) globalmente\n    texto = texto.replace(/[\\r\\n]+/g, '');\n    \n    // 3. Limpiamos cualquier espacio en blanco sobrante a los lados\n    msg.payload = texto.trim();\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 1400,
+        "wires": [
+            [
+                "17de6e6e6752b679"
+            ]
+        ]
+    },
+    {
+        "id": "17de6e6e6752b679",
+        "type": "ui_template",
+        "z": "3224d6c38c360858",
+        "group": "c578e5d8c89595ab",
+        "name": "Red actual",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "format": "<div class=\"wifi-widget\">\n    <div class=\"wifi-icon\">\n        <svg viewBox=\"0 0 24 24\" width=\"28\" height=\"28\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"\n            stroke-linecap=\"round\" stroke-linejoin=\"round\">\n            <path d=\"M5 12.55a11 11 0 0 1 14.08 0\"></path>\n            <path d=\"M1.42 9a16 16 0 0 1 21.16 0\"></path>\n            <path d=\"M8.53 16.11a6 6 0 0 1 6.95 0\"></path>\n            <line x1=\"12\" y1=\"20\" x2=\"12.01\" y2=\"20\"></line>\n        </svg>\n    </div>\n\n    <div class=\"wifi-info\">\n        <span class=\"wifi-label\">RED ACTUAL (SSID)</span>\n\n        <span class=\"wifi-ssid\" ng-if=\"msg.payload\">{{msg.payload}}</span>\n\n        <span class=\"wifi-ssid scanning\" ng-if=\"!msg.payload\">Escaneando router...</span>\n    </div>\n</div>\n\n<style>\n    /* Estilo de la tarjeta del Widget */\n    .wifi-widget {\n        background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);\n        /* Tonos claros celestes */\n        border-radius: 10px;\n        padding: 15px 20px;\n        display: flex;\n        align-items: center;\n        gap: 18px;\n        border: 1px solid #bae6fd;\n        box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.8), 0 4px 10px rgba(14, 165, 233, 0.08);\n        margin-bottom: 15px;\n    }\n\n    /* Círculo azul para el ícono */\n    .wifi-icon {\n        background: #0ea5e9;\n        color: white;\n        padding: 12px;\n        border-radius: 50%;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        box-shadow: 0 4px 12px rgba(14, 165, 233, 0.4);\n    }\n\n    /* Estructura de las letras */\n    .wifi-info {\n        display: flex;\n        flex-direction: column;\n    }\n\n    .wifi-label {\n        font-size: 0.75rem;\n        font-weight: 800;\n        color: #0369a1;\n        letter-spacing: 1.5px;\n        margin-bottom: 4px;\n    }\n\n    .wifi-ssid {\n        font-size: 1.5rem;\n        font-weight: 900;\n        color: #082f49;\n        font-family: monospace;\n        text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);\n    }\n\n    /* Animación de latido mientras carga */\n    .scanning {\n        color: #0284c7;\n        opacity: 0.7;\n        font-size: 1.1rem;\n        animation: pulsar-wifi 1.5s ease-in-out infinite;\n    }\n\n    @keyframes pulsar-wifi {\n\n        0%,\n        100% {\n            opacity: 0.5;\n        }\n\n        50% {\n            opacity: 1;\n            text-shadow: 0 0 8px rgba(14, 165, 233, 0.5);\n        }\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1170,
+        "y": 1400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "305acc41738d2df6",
+        "type": "ui_template",
+        "z": "3224d6c38c360858",
+        "group": "c578e5d8c89595ab",
+        "name": "Estado de Internet",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "format": "<div class=\"wifi-widget\">\n    <div class=\"wifi-icon\" style=\"background: #10b981; box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);\">\n        <svg viewBox=\"0 0 24 24\" width=\"28\" height=\"28\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"\n            stroke-linecap=\"round\" stroke-linejoin=\"round\">\n            <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n            <line x1=\"2\" y1=\"12\" x2=\"22\" y2=\"12\"></line>\n            <path d=\"M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z\"></path>\n        </svg>\n    </div>\n    <div class=\"wifi-info\">\n        <span class=\"wifi-label\">ESTADO DE CONEXIÓN</span>\n        <span class=\"wifi-ssid\" ng-if=\"msg.payload\" style=\"color: #047857;\">{{msg.payload}}</span>\n        <span class=\"wifi-ssid scanning\" ng-if=\"!msg.payload\">Haciendo ping...</span>\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 930,
+        "y": 1560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c47ca7b1f78fc25e",
+        "type": "comment",
+        "z": "3224d6c38c360858",
+        "name": "Graficas de Rendimiento",
+        "info": "",
+        "x": 170,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "7d14218dc9ec31c4",
+        "type": "ui_template",
+        "z": "3224d6c38c360858",
+        "group": "c578e5d8c89595ab",
+        "name": "Dispositivos Conectados",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "format": "<div class=\"wifi-widget\">\n    <div class=\"wifi-icon\" style=\"background: #8b5cf6; box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4);\">\n        <svg viewBox=\"0 0 24 24\" width=\"28\" height=\"28\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"\n            stroke-linecap=\"round\" stroke-linejoin=\"round\">\n            <path d=\"M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2\"></path>\n            <circle cx=\"9\" cy=\"7\" r=\"4\"></circle>\n            <path d=\"M23 21v-2a4 4 0 0 0-3-3.87\"></path>\n            <path d=\"M16 3.13a4 4 0 0 1 0 7.75\"></path>\n        </svg>\n    </div>\n    <div class=\"wifi-info\">\n        <span class=\"wifi-label\">DISPOSITIVOS CONECTADOS</span>\n        <span class=\"wifi-ssid\" ng-if=\"msg.payload\" style=\"color: #4c1d95;\">{{msg.payload}}</span>\n        <span class=\"wifi-ssid scanning\" ng-if=\"!msg.payload\">Contando...</span>\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1050,
+        "y": 1660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1b3648dfc5552d0d",
+        "type": "function",
+        "z": "3224d6c38c360858",
+        "name": "Estado de Internet",
+        "func": "var routerPass = 'DTIC2025B_jp';\nvar routerIP = '192.168.1.1';\n\n// Este comando hace un ping a Google (8.8.8.8) de 1 segundo. Si responde, imprime CONECTADO. Si falla, imprime BLOQUEADO.\nvar uciCmd = \"ping -c 1 -W 1 8.8.8.8 >/dev/null 2>&1 && echo 'CONECTADO' || echo 'BLOQUEADO'\";\n\nmsg.payload = `sshpass -p '${routerPass}' ssh -o StrictHostKeyChecking=no root@${routerIP} \"${uciCmd}\"`;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 1560,
+        "wires": [
+            [
+                "837301da1d93e885"
+            ]
+        ]
+    },
+    {
+        "id": "837301da1d93e885",
+        "type": "exec",
+        "z": "3224d6c38c360858",
+        "command": "",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "SSH Router",
+        "x": 710,
+        "y": 1560,
+        "wires": [
+            [
+                "305acc41738d2df6"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "81ac4ef82a4b2833",
+        "type": "function",
+        "z": "3224d6c38c360858",
+        "name": "Dispositivos conectados",
+        "func": "var routerPass = 'DTIC2025B_jp';\nvar routerIP = '192.168.1.1';\n\n// Este comando cuenta cuántas líneas (dispositivos) hay en el archivo de concesiones DHCP\nvar uciCmd = \"cat /tmp/dhcp.leases | wc -l\";\n\nmsg.payload = `sshpass -p '${routerPass}' ssh -o StrictHostKeyChecking=no root@${routerIP} \"${uciCmd}\"`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 1660,
+        "wires": [
+            [
+                "d66857744618c2f1"
+            ]
+        ]
+    },
+    {
+        "id": "d66857744618c2f1",
+        "type": "exec",
+        "z": "3224d6c38c360858",
+        "command": "",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "SSH Router",
+        "x": 770,
+        "y": 1660,
+        "wires": [
+            [
+                "7d14218dc9ec31c4"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "c4e83b45fc40e309",
+        "type": "ui_chart",
+        "z": "3224d6c38c360858",
+        "name": "",
+        "group": "8b0aa622293c9d33",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Uso de Memoria RAM (%)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#8b5cf6",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1270,
+        "y": 1840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "78e6240fdf7b33fd",
+        "type": "function",
+        "z": "3224d6c38c360858",
+        "name": "Carga de la CPU",
+        "func": "var routerPass = 'DTIC2025B_jp';\nvar routerIP = '192.168.1.1';\n\n// Solo pedimos el texto crudo del procesador, sin matemática complicada\nvar uciCmd = \"cat /proc/loadavg\";\n\nmsg.payload = `sshpass -p '${routerPass}' ssh -o StrictHostKeyChecking=no root@${routerIP} \"${uciCmd}\"`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 1760,
+        "wires": [
+            [
+                "69f6f0e110201ed9"
+            ]
+        ]
+    },
+    {
+        "id": "69f6f0e110201ed9",
+        "type": "exec",
+        "z": "3224d6c38c360858",
+        "command": "",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "SSH Router",
+        "x": 790,
+        "y": 1760,
+        "wires": [
+            [
+                "8473cb4b34441669",
+                "bdb3fd9830ae80ea"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "d4cab80e37479a2a",
+        "type": "function",
+        "z": "3224d6c38c360858",
+        "name": "Uso de Memoria RAM",
+        "func": "var routerPass = 'DTIC2025B_jp';\nvar routerIP = '192.168.1.1';\n\n// Usamos 'print' en lugar de 'printf' para que nos devuelva TODOS los decimales sin redondear\nvar uciCmd = \"free | awk '/Mem:/ {print \\\\$3/\\\\$2*100}'\";\n\nmsg.payload = `sshpass -p '${routerPass}' ssh -o StrictHostKeyChecking=no root@${routerIP} \"${uciCmd}\"`;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 1860,
+        "wires": [
+            [
+                "65fc95ede5f330e8"
+            ]
+        ]
+    },
+    {
+        "id": "65fc95ede5f330e8",
+        "type": "exec",
+        "z": "3224d6c38c360858",
+        "command": "",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "SSH Router",
+        "x": 790,
+        "y": 1860,
+        "wires": [
+            [
+                "a858f18b573c8b5e"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "4515ecc67681c015",
+        "type": "comment",
+        "z": "3224d6c38c360858",
+        "name": "Scripts para aplicar reglas de firewall",
+        "info": "",
+        "x": 180,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "9004e82f2e454730",
+        "type": "comment",
+        "z": "3224d6c38c360858",
+        "name": "Grafo de Red",
+        "info": "",
+        "x": 450,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "a858f18b573c8b5e",
+        "type": "function",
+        "z": "3224d6c38c360858",
+        "name": "Limpieza de salto de linea",
+        "func": "if (msg.payload) {\n    // Limpiamos la basura y forzamos a que sea un número flotante (Float)\n    var numeroLimpio = parseFloat(msg.payload.toString().replace(/[\\r\\n]+/g, '').trim());\n    \n    // Solo enviamos si es un número válido\n    if (!isNaN(numeroLimpio)) {\n        global.set('esc1_last_ram', numeroLimpio);\n        msg.payload = numeroLimpio;\n        return msg;\n    }\n}\n// Si hubo error, no mandamos nada para no romper la gráfica\nreturn null;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 1840,
+        "wires": [
+            [
+                "c4e83b45fc40e309"
+            ]
+        ]
+    },
+    {
+        "id": "8473cb4b34441669",
+        "type": "debug",
+        "z": "3224d6c38c360858",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 1960,
+        "wires": []
+    },
+    {
+        "id": "e4684009d265262c",
+        "type": "ui_chart",
+        "z": "3224d6c38c360858",
+        "name": "",
+        "group": "8b0aa622293c9d33",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Carga de CPU (%)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "500",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#0ea5e9",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1270,
+        "y": 1740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bdb3fd9830ae80ea",
+        "type": "function",
+        "z": "3224d6c38c360858",
+        "name": "Limpieza de salto de linea",
+        "func": "if (msg.payload) {\n    // El router responde algo como: \"0.15 0.05 0.01 1/62 1234\"\n    var texto = msg.payload.toString().trim();\n    var partes = texto.split(\" \"); // Cortamos el texto por los espacios\n    \n    if (partes.length > 0) {\n        // Tomamos el primer número, lo convertimos a decimal y lo multiplicamos por 100\n        var cargaCPU = parseFloat(partes[0]) * 100;\n        \n        // Si el cálculo fue exitoso, lo enviamos a la gráfica\n        if (!isNaN(cargaCPU)) {\n            global.set('esc1_last_cpu', cargaCPU);\n            msg.payload = cargaCPU;\n            return msg;\n        }\n    }\n}\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 1740,
+        "wires": [
+            [
+                "e4684009d265262c"
+            ]
+        ]
+    },
+    {
+        "id": "38d0a42bfccde7e2",
+        "type": "ui_template",
+        "z": "3224d6c38c360858",
+        "group": "2cf5b5c854bf51e3",
+        "name": "",
+        "order": 2,
+        "width": "30",
+        "height": "27",
+        "format": "<div class=\"table-container\">\n    <div class=\"table-header\">\n        <div class=\"table-title\">AUDITORÍA DE USUARIOS CONECTADOS</div>\n        \n        <div class=\"header-right\">\n            <div class=\"table-badge\">{{msg.payload.length || 0}} Activos</div>\n            \n            <button class=\"clear-btn\" ng-click=\"send({payload: 'BORRAR_TODO'})\">\n                <svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\">\n                    <path d=\"M3 6h18m-2 0v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2\"></path>\n                </svg>\n                LIMPIAR DATOS\n            </button>\n        </div>\n    </div>\n\n    <table class=\"clean-table\">\n        <thead>\n            <tr>\n                <th>ALIAS / APODO</th>\n                <th>ESTADO</th>\n                <th>HORA DE INGRESO</th>\n            </tr>\n        </thead>\n        <tbody>\n            <tr ng-repeat=\"user in msg.payload track by $index\">\n                <td><b>{{user.nombre}}</b></td>\n                <td><span class=\"status-pill\"><span class=\"dot\"></span> {{user.estado}}</span></td>\n                <td class=\"time-col\">{{user.fecha}}</td>\n            </tr>\n            <tr ng-if=\"!msg.payload || msg.payload.length === 0\">\n                <td colspan=\"3\" style=\"text-align:center; color:#94a3b8; padding:40px;\">Esperando nuevas conexiones...</td>\n            </tr>\n        </tbody>\n    </table>\n</div>\n\n<style>\n    :host {\n        display: block;\n        width: 100%;\n    }\n\n    /* EL TRUCO DE LA FUSIÓN: \n       Quitamos el fondo, el borde y la sombra para que se mezcle con la tarjeta de Node-RED */\n    .table-container {\n        background: transparent;\n        padding: 5px 15px;\n        /* Reducimos el padding porque el cuadro exterior ya tiene el suyo */\n        font-family: 'Segoe UI', sans-serif;\n        min-height: 60vh;\n    }\n\n    .table-header {\n        display: flex;\n        justify-content: space-between;\n        align-items: center;\n        margin-bottom: 25px;\n        border-bottom: 2px solid #f1f5f9;\n        padding-bottom: 15px;\n    }\n\n    .table-title {\n        color: #0369a1;\n        font-weight: 800;\n        font-size: 1.2rem;\n        letter-spacing: 1px;\n    }\n\n    .header-right {\n        display: flex;\n        gap: 15px;\n        align-items: center;\n    }\n\n    .table-badge {\n        background: #f0f9ff;\n        color: #0ea5e9;\n        padding: 6px 15px;\n        border-radius: 20px;\n        font-weight: bold;\n        font-size: 0.8rem;\n    }\n\n    /* ESTILO DEL BOTÓN DE RESETEO */\n    .clear-btn {\n        background: #fef2f2;\n        color: #ef4444;\n        border: 1px solid #fee2e2;\n        padding: 8px 16px;\n        border-radius: 10px;\n        font-weight: bold;\n        font-size: 0.8rem;\n        cursor: pointer;\n        display: flex;\n        align-items: center;\n        gap: 8px;\n        transition: all 0.2s;\n    }\n\n    .clear-btn:hover {\n        background: #fee2e2;\n        transform: translateY(-1px);\n        box-shadow: 0 4px 10px rgba(239, 68, 68, 0.1);\n    }\n\n    .clear-btn:active {\n        transform: translateY(0);\n    }\n\n    .clean-table {\n        width: 100%;\n        border-collapse: collapse;\n        text-align: left;\n    }\n\n    .clean-table th {\n        color: #94a3b8;\n        font-size: 0.8rem;\n        padding: 15px;\n        border-bottom: 2px solid #f1f5f9;\n    }\n\n    .clean-table td {\n        padding: 15px;\n        border-bottom: 1px solid #f8fafc;\n        font-size: 1.1rem;\n        color: #1e293b;\n    }\n\n    .status-pill {\n        background: #ecfdf5;\n        color: #059669;\n        padding: 5px 12px;\n        border-radius: 12px;\n        font-size: 0.9rem;\n        font-weight: bold;\n        display: inline-flex;\n        align-items: center;\n        gap: 8px;\n    }\n\n    .dot {\n        width: 8px;\n        height: 8px;\n        background: #10b981;\n        border-radius: 50%;\n    }\n\n    .time-col {\n        color: #64748b;\n        font-family: monospace;\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1360,
+        "y": 2160,
+        "wires": [
+            [
+                "7f034d486fe4d9dc"
+            ]
+        ]
+    },
+    {
+        "id": "aa02226b66e6dea0",
+        "type": "function",
+        "z": "3224d6c38c360858",
+        "name": "Tabla de alias",
+        "func": "// ==========================================\n// 1. CAPTURA DE DATOS Y SANITIZACIÓN\n// ==========================================\nlet ip = (msg.req && msg.req.ip ? msg.req.ip : \"\").replace(\"::ffff:\", \"\");\nlet nombre = (msg.payload && msg.payload.nombre ? msg.payload.nombre : \"Invitado\").toString().trim();\nlet consentimiento = !!(msg.payload && msg.payload.consentimiento);\nconst now = Date.now();\n\nif (!nombre) nombre = \"Invitado\";\nif (!ip) ip = \"0.0.0.0\";\n\n// Sanitización para evitar inyecciones HTML\nfunction escapeHtml(str) {\n    const map = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '\"': '&quot;', \"'\": '&#39;' };\n    return String(str).replace(/[&<>\"']/g, ch => map[ch]);\n}\nconst nombreSeguro = escapeHtml(nombre);\n\n// ==========================================\n// 2. VALIDACIÓN DE CONSENTIMIENTO (RECHAZO)\n// ==========================================\nif (!consentimiento) {\n    // Actualizamos métricas de rechazo de tu código original\n    let metrics = global.get(\"esc1_metrics\") || {};\n    metrics.registros_rechazados_total = Number(metrics.registros_rechazados_total || 0) + 1;\n    metrics.ultimo_rechazo_registro_ts = now;\n    metrics.ultimo_rechazo_registro_ip = ip;\n    global.set(\"esc1_metrics\", metrics);\n\n    // Pantalla de error para el celular\n    let msgCelularError = {\n        req: msg.req,\n        res: msg.res,\n        statusCode: 403,\n        headers: { \"Content-Type\": \"text/html; charset=utf-8\" },\n        payload: `\n        <!DOCTYPE html>\n        <html lang=\"es\">\n        <head>\n            <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\">\n            <style>\n                body { background: #f8fafc; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; font-family: 'Segoe UI', sans-serif; padding: 20px; }\n                .card { background: white; padding: 40px 25px; border-radius: 20px; border: 1px solid #fee2e2; box-shadow: 0 15px 40px rgba(0,0,0,0.06); text-align: center; width: 100%; max-width: 450px; }\n                .icon { background: #fef2f2; color: #ef4444; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px; }\n                h1 { color: #0f172a; font-size: 1.8rem; margin: 0 0 15px; }\n                p { color: #475569; line-height: 1.5; }\n            </style>\n        </head>\n        <body>\n            <div class=\"card\">\n                <div class=\"icon\">\n                    <svg viewBox=\"0 0 24 24\" width=\"40\" height=\"40\" stroke=\"currentColor\" stroke-width=\"3\" fill=\"none\"><line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"></line><line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"></line></svg>\n                </div>\n                <h1>Consentimiento Requerido</h1>\n                <p>Para participar en el escenario debes aceptar el consentimiento informado. Sin él, no podemos procesar tu participación.</p>\n            </div>\n        </body>\n        </html>\n        `\n    };\n    \n    // Si no hay consentimiento: Mandamos 'null' a la tabla para no actualizarla, y el error al celular.\n    return [null, msgCelularError];\n}\n\n// ==========================================\n// 3. LÓGICA DEL GRAFO Y MÉTRICAS (El Motor)\n// ==========================================\nnode.warn(\"=====================================\");\nnode.warn(\"REGISTRO HTTP RECIBIDO:\");\nnode.warn(\" -> Nombre: \" + nombre);\nnode.warn(\" -> IP de origen: \" + ip);\nnode.warn(\" -> Consentimiento: \" + consentimiento);\nnode.warn(\"=====================================\");\n\nlet nameMap = global.get(\"deviceNames\") || {};\nnameMap[ip] = {\n    alias: nombre,\n    ts: now,\n    consent: consentimiento\n};\nglobal.set(\"deviceNames\", nameMap);\n\nglobal.set(\"esc1_join_\" + ip, now); // Marca temporal para métrica\n\nlet metrics = global.get(\"esc1_metrics\") || {};\nmetrics.registros_total = Number(metrics.registros_total || 0) + 1;\nmetrics.ultimo_registro_ts = now;\nmetrics.ultimo_registro_ip = ip;\nglobal.set(\"esc1_metrics\", metrics);\n\n\n// ==========================================\n// 4. LÓGICA DE LA TABLA (Para el Dashboard)\n// ==========================================\nvar opcionesHora = { timeZone: 'America/Guayaquil', hour12: true, hour: 'numeric', minute: '2-digit', second: '2-digit' };\nvar horaExacta = new Date().toLocaleTimeString('es-EC', opcionesHora);\n\nvar listaUsuarios = global.get(\"audit_users\") || [];\nlistaUsuarios.unshift({\n    nombre: nombreSeguro,\n    fecha: horaExacta,\n    estado: \"Verificado\"\n});\nglobal.set(\"audit_users\", listaUsuarios);\n\n\n// ==========================================\n// 5. PREPARAR LAS DOS SALIDAS (ÉXITO)\n// ==========================================\n\n// SALIDA 1 (Arriba): Exclusivo para la Tabla del Dashboard\nlet msgTabla = { payload: listaUsuarios };\n\n// SALIDA 2 (Abajo): Exclusivo para el Celular (Clean Tech + Privacidad)\nlet msgCelularExito = {\n    req: msg.req,\n    res: msg.res,\n    headers: { \"Content-Type\": \"text/html; charset=utf-8\" },\n    payload: `\n    <!DOCTYPE html>\n    <html lang=\"es\">\n    <head>\n        <meta charset=\"UTF-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\">\n        <title>Conexión Exitosa</title>\n        <style>\n            body { background-color: #f8fafc; margin: 0; padding: 20px; display: flex; justify-content: center; align-items: center; min-height: 100vh; font-family: 'Segoe UI', system-ui, sans-serif; }\n            .success-card { background: white; width: 100%; max-width: 450px; padding: 40px 25px; border-radius: 20px; border: 1px solid #e0f2fe; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06); text-align: center; box-sizing: border-box; }\n            .icon-container { background: #ecfdf5; color: #10b981; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px; box-shadow: 0 8px 20px rgba(16, 185, 129, 0.2); }\n            h1 { color: #0f172a; font-size: 2.2rem; font-weight: 900; margin: 0 0 15px 0; letter-spacing: -0.5px; }\n            p.main-msg { color: #475569; font-size: 1.2rem; line-height: 1.5; margin-bottom: 35px; }\n            \n            .privacy-box { background: #f0f9ff; border: 1px solid #bae6fd; padding: 20px; border-radius: 15px; text-align: left; display: flex; gap: 15px; align-items: flex-start; }\n            .privacy-icon { color: #0ea5e9; flex-shrink: 0; background: white; padding: 8px; border-radius: 10px; box-shadow: 0 4px 10px rgba(14, 165, 233, 0.1); }\n            .privacy-text { color: #0369a1; font-size: 0.95rem; line-height: 1.5; margin: 0; }\n            .privacy-text strong { color: #0c4a6e; display: block; font-size: 1.05rem; margin-bottom: 6px; }\n            .footer-text { margin-top: 35px; font-size: 0.85rem; color: #94a3b8; font-weight: bold; letter-spacing: 1px; }\n        </style>\n    </head>\n    <body>\n        <div class=\"success-card\">\n            <div class=\"icon-container\">\n                <svg viewBox=\"0 0 24 24\" width=\"40\" height=\"40\" stroke=\"currentColor\" stroke-width=\"3\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                    <polyline points=\"20 6 9 17 4 12\"></polyline>\n                </svg>\n            </div>\n            \n            <h1>¡Conexión Exitosa!</h1>\n            <p class=\"main-msg\">Tu dispositivo ha sido registrado correctamente. Ya puedes minimizar esta pantalla y continuar navegando.</p>\n            \n            <div class=\"privacy-box\">\n                <div class=\"privacy-icon\">\n                    <svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                        <path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"></path>\n                    </svg>\n                </div>\n                <div class=\"privacy-text\">\n                    <strong>Privacidad Garantizada</strong>\n                    Para cumplir con los protocolos de seguridad de esta demostración didáctica, <b>ningún dato generado será almacenado permanentemente</b>. Tu participación se realiza bajo el consentimiento previo.\n                </div>\n            </div>\n\n            <div class=\"footer-text\">\n                DEMO-KIT // AUDITORÍA DE RED\n            </div>\n        </div>\n    </body>\n    </html>\n    `\n};\n\n// Enviamos los mensajes por sus respectivos cables (Arriba a la tabla, Abajo al response)\nreturn [msgTabla, msgCelularExito];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 3,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 2100,
+        "wires": [
+            [
+                "38d0a42bfccde7e2"
+            ],
+            [
+                "02de39ee1d2a7395"
+            ]
+        ]
+    },
+    {
+        "id": "02de39ee1d2a7395",
+        "type": "http response",
+        "z": "3224d6c38c360858",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1510,
+        "y": 2080,
+        "wires": []
+    },
+    {
+        "id": "28adcfb2a9f674e3",
+        "type": "template",
+        "z": "3224d6c38c360858",
+        "name": "Fomulario Movil",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html>\n<html lang=\"es\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\">\n    <title>Portal de Conexión</title>\n    \n    <style>\n        body, html { margin: 0; padding: 0; background-color: #f8fafc; font-family: 'Segoe UI', system-ui, sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; }\n        .form-card { background: white; width: 92%; max-width: 450px; padding: 30px 20px; border-radius: 20px; border: 1px solid #e0f2fe; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06); box-sizing: border-box; }\n        .form-header { text-align: center; margin-bottom: 25px; }\n        .auth-icon { background: #f0f9ff; color: #0ea5e9; width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; }\n        .form-header h2 { color: #0369a1; font-size: 1.3rem; font-weight: 800; letter-spacing: 1px; margin: 0; }\n        .form-header p { color: #64748b; font-size: 0.9rem; margin-top: 8px; }\n        .input-group { margin-bottom: 25px; }\n        .input-group label { display: block; font-size: 0.75rem; font-weight: 800; color: #94a3b8; letter-spacing: 1px; margin-bottom: 8px; }\n        \n        /* Input de texto */\n        .input-group input { \n            width: 100%; padding: 15px; font-size: 1.1rem; border: 2px solid #f1f5f9; border-radius: 10px; \n            transition: all 0.3s ease; box-sizing: border-box; -webkit-appearance: none; \n        }\n        .input-group input:focus { border-color: #0ea5e9; outline: none; box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.1); }\n        .input-group input:invalid:focus { border-color: #ef4444; box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.1); }\n\n        /* CAJA DE CONSENTIMIENTO MEJORADA */\n        .consent-container {\n            background: #f0f9ff; /* Azul muy clarito para resaltar */\n            padding: 18px;\n            border-radius: 12px;\n            margin-bottom: 25px;\n            border: 1px solid #bae6fd;\n            box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);\n        }\n        .checkbox-wrapper { display: flex; gap: 15px; cursor: pointer; align-items: flex-start; }\n        input[type=\"checkbox\"] { transform: scale(1.5); margin-top: 3px; accent-color: #0ea5e9; flex-shrink: 0; }\n        .consent-text { font-size: 0.85rem; color: #334155; line-height: 1.5; margin: 0; }\n        .consent-text b { color: #0f172a; display: block; margin-top: 5px; font-size: 0.9rem;}\n\n        /* Botón de envío */\n        .submit-btn { width: 100%; background: #0ea5e9; color: white; border: none; padding: 16px; border-radius: 10px; font-weight: 800; font-size: 1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3); -webkit-appearance: none; }\n        .submit-btn:hover, .submit-btn:active { background: #0284c7; transform: translateY(-2px); box-shadow: 0 6px 15px rgba(14, 165, 233, 0.4); }\n    </style>\n</head>\n<body>\n\n    <div class=\"form-card\">\n        <div class=\"form-header\">\n            <div class=\"auth-icon\">\n                <svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\">\n                    <path d=\"M12 11c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4z\"></path>\n                    <path d=\"M18 21v-2a4 4 0 0 0-4-4H10a4 4 0 0 0-4 4v2\"></path>\n                </svg>\n            </div>\n            <h2>ACCESO AL EXPERIMENTO</h2>\n            <p>Identifícate para iniciar el monitoreo</p>\n        </div>\n\n        <form action=\"/register-name\" method=\"POST\" class=\"clean-form\">\n            <div class=\"input-group\">\n                <label for=\"nombre\">APODO O ALIAS</label>\n                <input type=\"text\" id=\"nombre\" name=\"nombre\" placeholder=\"Ej. Miso\" required\n                       pattern=\"[A-Za-zÁÉÍÓÚáéíóúÑñ\\s]+\" \n                       title=\"Solo se permiten letras y espacios.\"\n                       oninput=\"this.value = this.value.replace(/[^A-Za-zÁÉÍÓÚáéíóúÑñ\\s]/g, '')\"\n                       autocomplete=\"off\">\n            </div>\n\n            <div class=\"consent-container\">\n                <label class=\"checkbox-wrapper\">\n                    <input type=\"checkbox\" name=\"consentimiento\" required>\n                    <div class=\"consent-text\">\n                        Acepto participar. Entiendo que los dominios visitados serán monitoreados con fines didácticos. No se almacenarán datos personales.\n                        <b>No se interceptarán contraseñas.</b>\n                    </div>\n                </label>\n            </div>\n\n            <button type=\"submit\" class=\"submit-btn\">\n                REGISTRAR\n                <svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\">\n                    <line x1=\"5\" y1=\"12\" x2=\"19\" y2=\"12\"></line>\n                    <polyline points=\"12 5 19 12 12 19\"></polyline>\n                </svg>\n            </button>\n        </form>\n    </div>\n\n</body>\n</html>",
+        "output": "str",
+        "x": 520,
+        "y": 2100,
+        "wires": [
+            [
+                "409ecc94dc33a4d6"
+            ]
+        ]
+    },
+    {
+        "id": "10e1aca19080bcf2",
+        "type": "http in",
+        "z": "3224d6c38c360858",
+        "name": "",
+        "url": "/registro",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 330,
+        "y": 2100,
+        "wires": [
+            [
+                "28adcfb2a9f674e3"
+            ]
+        ]
+    },
+    {
+        "id": "3f3e4ba0cb68edc4",
+        "type": "http in",
+        "z": "3224d6c38c360858",
+        "name": "",
+        "url": "/register-name",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 950,
+        "y": 2100,
+        "wires": [
+            [
+                "aa02226b66e6dea0"
+            ]
+        ]
+    },
+    {
+        "id": "409ecc94dc33a4d6",
+        "type": "http response",
+        "z": "3224d6c38c360858",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 710,
+        "y": 2100,
+        "wires": []
+    },
+    {
+        "id": "56bf9c9e2e51f905",
+        "type": "ui_template",
+        "z": "3224d6c38c360858",
+        "group": "3ff985faad71fa94",
+        "name": "",
+        "order": 5,
+        "width": 1,
+        "height": 1,
+        "format": "<script>\n  (function() {\n    // 1. Evitar que se duplique el menú si recargamos la página\n    if (document.getElementById('demo-global-shell')) return;\n\n    // 2. Crear un contenedor maestro\n    var shell = document.createElement('div');\n    shell.id = 'demo-global-shell';\n    \n    // 3. Insertar todo nuestro diseño Clean Tech\n    shell.innerHTML = `\n        <style>\n            :root {\n                --h: 70px;\n                --s: 260px;\n                --f: 40px;\n                --tech-blue: #0ea5e9;\n                --tech-blue-dark: #0284c7;\n                --text-main: #1e293b;\n                --text-muted: #64748b;\n            }\n        \n            /* --- FONDO BASE DE LA PANTALLA --- */\n            body,\n            html {\n                background-color: #f8fafc !important;\n                margin: 0;\n            }\n        \n            /* --- ANIQUILACIÓN DEL MENÚ DE NODE-RED --- */\n            md-toolbar.nr-dashboard-toolbar {\n                display: none !important;\n            }\n        \n            md-sidenav,\n            md-backdrop {\n                display: none !important;\n            }\n        \n            /* --- FUSIÓN TRANSPARENTE DEL ÁREA CENTRAL --- */\n            md-content.md-default-theme,\n            md-content {\n                background-color: transparent !important;\n            }\n        \n            /* =========================================\n               EL FIX DEL SOLAPAMIENTO (OVERLAP FIX)\n               Aquí empujamos las gráficas y recalculamos el tamaño\n            ========================================= */\n            .nr-dashboard-view {\n                padding-top: 90px !important;\n                margin-left: 270px !important;\n                /* Empuja todo el contenido a la derecha */\n                width: calc(100vw - 280px) !important;\n                /* Le resta el espacio del menú al ancho total */\n                padding-right: 20px !important;\n                padding-bottom: 60px !important;\n                box-sizing: border-box !important;\n            }\n        \n            /* --- ESTILOS DEL DISEÑO DE TU SHELL --- */\n            .demo-shell-wrap {\n                position: fixed;\n                inset: 0;\n                z-index: 5;\n                font-family: 'Segoe UI', sans-serif;\n                pointer-events: none;\n            }\n        \n            .demo-shell-wrap * {\n                pointer-events: auto;\n            }\n        \n            .demo-head {\n                height: var(--h);\n                background: linear-gradient(90deg, #ffffff 0%, #f1f5f9 100%);\n                border-bottom: 2px solid var(--tech-blue);\n                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);\n                display: flex;\n                align-items: center;\n                justify-content: space-between;\n                padding: 0 24px;\n                color: var(--text-main);\n            }\n        \n            .brand-title {\n                font-weight: 800;\n                font-size: 1.1rem;\n                letter-spacing: 2px;\n            }\n        \n            .brand-title span {\n                color: var(--tech-blue);\n            }\n        \n            .status-badge {\n                display: flex;\n                align-items: center;\n                gap: 8px;\n                font-family: monospace;\n                font-size: 0.9rem;\n                background: rgba(14, 165, 233, 0.1);\n                padding: 5px 12px;\n                border-radius: 4px;\n                color: var(--tech-blue-dark);\n                font-weight: 600;\n            }\n        \n            .dot {\n                width: 8px;\n                height: 8px;\n                background-color: var(--tech-blue);\n                border-radius: 50%;\n                animation: pulse 2s infinite;\n            }\n        \n            /* =========================================\n               EL MENÚ TOTALMENTE TRANSPARENTE\n            ========================================= */\n            .demo-side {\n                position: fixed;\n                top: calc(var(--h) + 15px);\n                left: 15px;\n                bottom: calc(var(--f) + 15px);\n                width: calc(var(--s) - 30px);\n                background: transparent !important;\n                /* Totalmente transparente */\n                border: none !important;\n                /* Sin bordes */\n                box-shadow: none !important;\n                /* Sin sombras */\n                border-right: 2px dashed rgba(0, 0, 0, 0.06) !important;\n                /* Una línea punteada muy sutil para separar el área */\n                padding: 20px 12px;\n                display: flex;\n                flex-direction: column;\n                gap: 10px;\n            }\n        \n            .demo-side a {\n                text-decoration: none;\n            }\n        \n            .demo-item {\n                color: var(--text-muted);\n                padding: 12px 15px;\n                font-size: 0.95rem;\n                font-weight: 600;\n                cursor: pointer;\n                transition: all 0.3s ease;\n                position: relative;\n                clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);\n            }\n        \n            .demo-item::before {\n                content: '';\n                position: absolute;\n                left: 0;\n                top: 0;\n                bottom: 0;\n                width: 4px;\n                background: #cbd5e1;\n                transition: all 0.3s ease;\n            }\n        \n            .demo-item:hover,\n            .demo-item.active {\n                background: rgba(14, 165, 233, 0.08);\n                color: var(--tech-blue-dark);\n                transform: translateX(5px);\n            }\n        \n            .demo-item:hover::before,\n            .demo-item.active::before {\n                background: var(--tech-blue);\n            }\n        \n            .demo-item span {\n                font-family: monospace;\n                opacity: 0.6;\n                margin-right: 8px;\n                color: var(--tech-blue);\n            }\n        \n            .demo-foot {\n                position: fixed;\n                left: 0;\n                right: 0;\n                bottom: 0;\n                height: var(--f);\n                background: #ffffff;\n                border-top: 1px solid rgba(0, 0, 0, 0.08);\n                display: flex;\n                align-items: center;\n                justify-content: center;\n                font-family: monospace;\n                font-size: 13px;\n                font-weight: 600;\n                color: var(--text-muted);\n            }\n        \n            .terminal-cursor {\n                display: inline-block;\n                width: 8px;\n                height: 15px;\n                background-color: var(--tech-blue);\n                margin-left: 5px;\n                animation: blink 1s step-end infinite;\n            }\n        \n            @keyframes pulse {\n        \n                0%,\n                100% {\n                    transform: scale(0.95);\n                    opacity: 0.8;\n                }\n        \n                50% {\n                    transform: scale(1.2);\n                    opacity: 1;\n                    box-shadow: 0 0 12px rgba(14, 165, 233, 0.6);\n                }\n            }\n        \n            @keyframes blink {\n        \n                0%,\n                100% {\n                    opacity: 1;\n                }\n        \n                50% {\n                    opacity: 0;\n                }\n            }\n        \n            /* =========================================\n               SISTEMA DE DISEÑO: CLEAN TECH V2\n            ========================================= */\n            .nr-dashboard-cardpanel {\n                background: #ffffff !important;\n                border-radius: 12px !important;\n                box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05) !important;\n                border: 1px solid rgba(0, 0, 0, 0.05) !important;\n                padding: 20px !important;\n            }\n        \n            .nr-dashboard-cardpanel md-card {\n                background: transparent !important;\n                box-shadow: none !important;\n                border: none !important;\n                margin: 0 !important;\n                padding: 0 !important;\n            }\n        \n            .nr-dashboard-cardpanel .md-button {\n                height: auto !important;\n                min-height: 45px !important;\n                white-space: normal !important;\n                line-height: 1.2 !important;\n                padding: 10px 15px !important;\n                border-radius: 6px !important;\n                margin-bottom: 8px !important;\n                width: 100% !important;\n                font-weight: 600 !important;\n                text-transform: none !important;\n            }\n        \n            ui-text-input {\n                margin-bottom: 20px !important;\n                display: block !important;\n            }\n        </style>\n\n        <div class=\"demo-shell-wrap\">\n          <div class=\"demo-head\">\n            <div class=\"brand-title\">DEMO-KIT <span>//</span> CIBERSEGURIDAD <span>_</span> ESCENARIO 1</div>\n            <div class=\"status-badge\"><div class=\"dot\"></div> VISTA DEMO</div>\n          </div>\n\n          <div class=\"demo-side\">\n            <a href=\"#!/0\"><div class=\"demo-item active\" id=\"btn-0\"><span>01_</span> Configuración</div></a>\n            <a href=\"#!/1\"><div class=\"demo-item\" id=\"btn-1\"><span>02_</span> QR-WIFI</div></a>\n            <a href=\"#!/2\"><div class=\"demo-item\" id=\"btn-2\"><span>03_</span> QR-Registro</div></a>\n            <a href=\"#!/3\"><div class=\"demo-item\" id=\"btn-3\"><span>04_</span> Auditoría de Usuarios</div></a>\n            <a href=\"#!/4\"><div class=\"demo-item\" id=\"btn-4\"><span>05_</span> Demo de Red 2</div></a>\n          </div>\n\n          <div class=\"demo-foot\">\n            > ROOT@PROYECTO_TI :~ DTIC_ <span class=\"terminal-cursor\"></span>\n          </div>\n        </div>\n    `;\n\n    // 4. Inyectar en el navegador\n    document.body.appendChild(shell);\n\n    // 5. Lógica de Navegación\n    function updateActiveMenu() {\n        var hash = window.location.hash;\n        var buttons = document.querySelectorAll('.demo-item');\n        buttons.forEach(function(btn) { btn.classList.remove('active'); });\n        \n        if(hash.includes('/0')) document.getElementById('btn-0').classList.add('active');\n        else if(hash.includes('/1')) document.getElementById('btn-1').classList.add('active');\n        else if(hash.includes('/2')) document.getElementById('btn-2').classList.add('active');\n        else if(hash.includes('/3')) document.getElementById('btn-3').classList.add('active');\n        else if(hash.includes('/4')) document.getElementById('btn-4').classList.add('active');\n        else document.getElementById('btn-0').classList.add('active');\n    }\n\n    window.addEventListener('hashchange', updateActiveMenu);\n    updateActiveMenu();\n})();\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1480,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1630f47b3d9a5bab",
+        "type": "comment",
+        "z": "3224d6c38c360858",
+        "name": "Formulario Movil",
+        "info": "",
+        "x": 300,
+        "y": 2040,
+        "wires": []
+    },
+    {
+        "id": "6f06182073482a2b",
+        "type": "comment",
+        "z": "3224d6c38c360858",
+        "name": "Tabla de Usuarios Conectados",
+        "info": "",
+        "x": 1250,
+        "y": 2040,
+        "wires": []
+    },
+    {
+        "id": "4a483f482f07ef25",
+        "type": "inject",
+        "z": "3224d6c38c360858",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 290,
+        "y": 2180,
+        "wires": [
+            [
+                "70e440cca972c4d2"
+            ]
+        ]
+    },
+    {
+        "id": "70e440cca972c4d2",
+        "type": "function",
+        "z": "3224d6c38c360858",
+        "name": "Purga",
+        "func": "// 1. Borramos los datos de la memoria global\nglobal.set(\"audit_users\", []);\n\n// 2. Le decimos al mensaje que ahora la lista está vacía\nmsg.payload = [];\n\n// 3. Enviamos el mensaje\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 2180,
+        "wires": [
+            [
+                "38d0a42bfccde7e2"
+            ]
+        ]
+    },
+    {
+        "id": "2dfc0283a87b6945",
+        "type": "ui_template",
+        "z": "3224d6c38c360858",
+        "group": "2cf5b5c854bf51e3",
+        "name": "",
+        "order": 5,
+        "width": 1,
+        "height": 1,
+        "format": "<script>\n  (function() {\n    // 1. Evitar que se duplique el menú si recargamos la página\n    if (document.getElementById('demo-global-shell')) return;\n\n    // 2. Crear un contenedor maestro\n    var shell = document.createElement('div');\n    shell.id = 'demo-global-shell';\n    \n    // 3. Insertar todo nuestro diseño Clean Tech\n    shell.innerHTML = `\n        <style>\n            :root {\n                --h: 70px;\n                --s: 260px;\n                --f: 40px;\n                --tech-blue: #0ea5e9;\n                --tech-blue-dark: #0284c7;\n                --text-main: #1e293b;\n                --text-muted: #64748b;\n            }\n        \n            /* --- FONDO BASE DE LA PANTALLA --- */\n            body,\n            html {\n                background-color: #f8fafc !important;\n                margin: 0;\n            }\n        \n            /* --- ANIQUILACIÓN DEL MENÚ DE NODE-RED --- */\n            md-toolbar.nr-dashboard-toolbar {\n                display: none !important;\n            }\n        \n            md-sidenav,\n            md-backdrop {\n                display: none !important;\n            }\n        \n            /* --- FUSIÓN TRANSPARENTE DEL ÁREA CENTRAL --- */\n            md-content.md-default-theme,\n            md-content {\n                background-color: transparent !important;\n            }\n        \n            /* =========================================\n               EL FIX DEL SOLAPAMIENTO (OVERLAP FIX)\n               Aquí empujamos las gráficas y recalculamos el tamaño\n            ========================================= */\n            .nr-dashboard-view {\n                padding-top: 90px !important;\n                margin-left: 270px !important;\n                /* Empuja todo el contenido a la derecha */\n                width: calc(100vw - 280px) !important;\n                /* Le resta el espacio del menú al ancho total */\n                padding-right: 20px !important;\n                padding-bottom: 60px !important;\n                box-sizing: border-box !important;\n            }\n        \n            /* --- ESTILOS DEL DISEÑO DE TU SHELL --- */\n            .demo-shell-wrap {\n                position: fixed;\n                inset: 0;\n                z-index: 5;\n                font-family: 'Segoe UI', sans-serif;\n                pointer-events: none;\n            }\n        \n            .demo-shell-wrap * {\n                pointer-events: auto;\n            }\n        \n            .demo-head {\n                height: var(--h);\n                background: linear-gradient(90deg, #ffffff 0%, #f1f5f9 100%);\n                border-bottom: 2px solid var(--tech-blue);\n                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);\n                display: flex;\n                align-items: center;\n                justify-content: space-between;\n                padding: 0 24px;\n                color: var(--text-main);\n            }\n        \n            .brand-title {\n                font-weight: 800;\n                font-size: 1.1rem;\n                letter-spacing: 2px;\n            }\n        \n            .brand-title span {\n                color: var(--tech-blue);\n            }\n        \n            .status-badge {\n                display: flex;\n                align-items: center;\n                gap: 8px;\n                font-family: monospace;\n                font-size: 0.9rem;\n                background: rgba(14, 165, 233, 0.1);\n                padding: 5px 12px;\n                border-radius: 4px;\n                color: var(--tech-blue-dark);\n                font-weight: 600;\n            }\n        \n            .dot {\n                width: 8px;\n                height: 8px;\n                background-color: var(--tech-blue);\n                border-radius: 50%;\n                animation: pulse 2s infinite;\n            }\n        \n            /* =========================================\n               EL MENÚ TOTALMENTE TRANSPARENTE\n            ========================================= */\n            .demo-side {\n                position: fixed;\n                top: calc(var(--h) + 15px);\n                left: 15px;\n                bottom: calc(var(--f) + 15px);\n                width: calc(var(--s) - 30px);\n                background: transparent !important;\n                /* Totalmente transparente */\n                border: none !important;\n                /* Sin bordes */\n                box-shadow: none !important;\n                /* Sin sombras */\n                border-right: 2px dashed rgba(0, 0, 0, 0.06) !important;\n                /* Una línea punteada muy sutil para separar el área */\n                padding: 20px 12px;\n                display: flex;\n                flex-direction: column;\n                gap: 10px;\n            }\n        \n            .demo-side a {\n                text-decoration: none;\n            }\n        \n            .demo-item {\n                color: var(--text-muted);\n                padding: 12px 15px;\n                font-size: 0.95rem;\n                font-weight: 600;\n                cursor: pointer;\n                transition: all 0.3s ease;\n                position: relative;\n                clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);\n            }\n        \n            .demo-item::before {\n                content: '';\n                position: absolute;\n                left: 0;\n                top: 0;\n                bottom: 0;\n                width: 4px;\n                background: #cbd5e1;\n                transition: all 0.3s ease;\n            }\n        \n            .demo-item:hover,\n            .demo-item.active {\n                background: rgba(14, 165, 233, 0.08);\n                color: var(--tech-blue-dark);\n                transform: translateX(5px);\n            }\n        \n            .demo-item:hover::before,\n            .demo-item.active::before {\n                background: var(--tech-blue);\n            }\n        \n            .demo-item span {\n                font-family: monospace;\n                opacity: 0.6;\n                margin-right: 8px;\n                color: var(--tech-blue);\n            }\n        \n            .demo-foot {\n                position: fixed;\n                left: 0;\n                right: 0;\n                bottom: 0;\n                height: var(--f);\n                background: #ffffff;\n                border-top: 1px solid rgba(0, 0, 0, 0.08);\n                display: flex;\n                align-items: center;\n                justify-content: center;\n                font-family: monospace;\n                font-size: 13px;\n                font-weight: 600;\n                color: var(--text-muted);\n            }\n        \n            .terminal-cursor {\n                display: inline-block;\n                width: 8px;\n                height: 15px;\n                background-color: var(--tech-blue);\n                margin-left: 5px;\n                animation: blink 1s step-end infinite;\n            }\n        \n            @keyframes pulse {\n        \n                0%,\n                100% {\n                    transform: scale(0.95);\n                    opacity: 0.8;\n                }\n        \n                50% {\n                    transform: scale(1.2);\n                    opacity: 1;\n                    box-shadow: 0 0 12px rgba(14, 165, 233, 0.6);\n                }\n            }\n        \n            @keyframes blink {\n        \n                0%,\n                100% {\n                    opacity: 1;\n                }\n        \n                50% {\n                    opacity: 0;\n                }\n            }\n        \n            /* =========================================\n               SISTEMA DE DISEÑO: CLEAN TECH V2\n            ========================================= */\n            .nr-dashboard-cardpanel {\n                background: #ffffff !important;\n                border-radius: 12px !important;\n                box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05) !important;\n                border: 1px solid rgba(0, 0, 0, 0.05) !important;\n                padding: 20px !important;\n            }\n        \n            .nr-dashboard-cardpanel md-card {\n                background: transparent !important;\n                box-shadow: none !important;\n                border: none !important;\n                margin: 0 !important;\n                padding: 0 !important;\n            }\n        \n            .nr-dashboard-cardpanel .md-button {\n                height: auto !important;\n                min-height: 45px !important;\n                white-space: normal !important;\n                line-height: 1.2 !important;\n                padding: 10px 15px !important;\n                border-radius: 6px !important;\n                margin-bottom: 8px !important;\n                width: 100% !important;\n                font-weight: 600 !important;\n                text-transform: none !important;\n            }\n        \n            ui-text-input {\n                margin-bottom: 20px !important;\n                display: block !important;\n            }\n        </style>\n\n        <div class=\"demo-shell-wrap\">\n          <div class=\"demo-head\">\n            <div class=\"brand-title\">DEMO-KIT <span>//</span> CIBERSEGURIDAD <span>_</span> ESCENARIO 1</div>\n            <div class=\"status-badge\"><div class=\"dot\"></div> VISTA DEMO</div>\n          </div>\n\n          <div class=\"demo-side\">\n            <a href=\"#!/0\"><div class=\"demo-item active\" id=\"btn-0\"><span>01_</span> Configuración</div></a>\n            <a href=\"#!/1\"><div class=\"demo-item\" id=\"btn-1\"><span>02_</span> QR-WIFI</div></a>\n            <a href=\"#!/2\"><div class=\"demo-item\" id=\"btn-2\"><span>03_</span> QR-Registro</div></a>\n            <a href=\"#!/3\"><div class=\"demo-item\" id=\"btn-3\"><span>04_</span> Auditoría de Usuarios</div></a>\n            <a href=\"#!/4\"><div class=\"demo-item\" id=\"btn-4\"><span>05_</span> Demo de Red 2</div></a>\n          </div>\n\n          <div class=\"demo-foot\">\n            > ROOT@PROYECTO_TI :~ DTIC_ <span class=\"terminal-cursor\"></span>\n          </div>\n        </div>\n    `;\n\n    // 4. Inyectar en el navegador\n    document.body.appendChild(shell);\n\n    // 5. Lógica de Navegación\n    function updateActiveMenu() {\n        var hash = window.location.hash;\n        var buttons = document.querySelectorAll('.demo-item');\n        buttons.forEach(function(btn) { btn.classList.remove('active'); });\n        \n        if(hash.includes('/0')) document.getElementById('btn-0').classList.add('active');\n        else if(hash.includes('/1')) document.getElementById('btn-1').classList.add('active');\n        else if(hash.includes('/2')) document.getElementById('btn-2').classList.add('active');\n        else if(hash.includes('/3')) document.getElementById('btn-3').classList.add('active');\n        else if(hash.includes('/4')) document.getElementById('btn-4').classList.add('active');\n        else document.getElementById('btn-0').classList.add('active');\n    }\n\n    window.addEventListener('hashchange', updateActiveMenu);\n    updateActiveMenu();\n})();\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1480,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7f034d486fe4d9dc",
+        "type": "switch",
+        "z": "3224d6c38c360858",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "BORRAR_TODO",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 890,
+        "y": 2240,
+        "wires": [
+            [
+                "70e440cca972c4d2"
+            ]
+        ]
+    },
+    {
+        "id": "inj_log_header_init",
+        "type": "inject",
+        "z": "3224d6c38c360858",
+        "name": "Init CSV header",
+        "props": [{"p": "payload"}],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 3,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 2700,
+        "wires": [["func_log_header"]]
+    },
+    {
+        "id": "func_log_header",
+        "type": "function",
+        "z": "3224d6c38c360858",
+        "name": "Cabecera CSV",
+        "func": "msg.payload = 'timestamp,cpu_load_pct,ram_used_pct,internet_habilitado,dispositivos_online\\n';\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 2700,
+        "wires": [["file_write_header"]]
+    },
+    {
+        "id": "file_write_header",
+        "type": "file",
+        "z": "3224d6c38c360858",
+        "name": "Escribir cabecera CSV",
+        "filename": "/data/resource_log.csv",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "utf8",
+        "x": 650,
+        "y": 2700,
+        "wires": [[]]
+    },
+    {
+        "id": "inj_log_resources",
+        "type": "inject",
+        "z": "3224d6c38c360858",
+        "name": "Log cada 30s",
+        "props": [{"p": "payload"}],
+        "repeat": "30",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 2760,
+        "wires": [["func_log_resources"]]
+    },
+    {
+        "id": "func_log_resources",
+        "type": "function",
+        "z": "3224d6c38c360858",
+        "name": "Formatear fila CSV",
+        "func": "var cpu = global.get('esc1_last_cpu');\nvar ram = global.get('esc1_last_ram');\nif (cpu === undefined || cpu === null) return null;\nvar internet = global.get('esc1_internet_enabled') === true;\nvar devices = (global.get('esc1_last_devices') || []).length;\nvar ts = new Date().toISOString();\nmsg.payload = ts + ',' + cpu.toFixed(2) + ',' + (ram !== null && ram !== undefined ? ram.toFixed(2) : '') + ',' + internet + ',' + devices;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 2760,
+        "wires": [["file_append_resources"]]
+    },
+    {
+        "id": "file_append_resources",
+        "type": "file",
+        "z": "3224d6c38c360858",
+        "name": "Append a CSV",
+        "filename": "/data/resource_log.csv",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "utf8",
+        "x": 640,
+        "y": 2760,
+        "wires": [[]]
+    },
+    {
+        "id": "http_in_export_csv",
+        "type": "http in",
+        "z": "3224d6c38c360858",
+        "name": "GET /esc1/export-resources",
+        "url": "/esc1/export-resources",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 230,
+        "y": 2840,
+        "wires": [["func_prepare_csv_export"]]
+    },
+    {
+        "id": "func_prepare_csv_export",
+        "type": "function",
+        "z": "3224d6c38c360858",
+        "name": "Preparar descarga CSV",
+        "func": "var ts = new Date().toISOString().slice(0,19).replace('T','_').replace(/:/g,'-');\nmsg.filename = '/data/resource_log.csv';\nmsg.downloadFilename = 'esc1_recursos_' + ts + '.csv';\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 2840,
+        "wires": [["file_in_csv_read"]]
+    },
+    {
+        "id": "file_in_csv_read",
+        "type": "file in",
+        "z": "3224d6c38c360858",
+        "name": "Leer CSV",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "utf8",
+        "allProps": false,
+        "x": 700,
+        "y": 2840,
+        "wires": [["func_csv_response"]]
+    },
+    {
+        "id": "func_csv_response",
+        "type": "function",
+        "z": "3224d6c38c360858",
+        "name": "Headers CSV response",
+        "func": "msg.headers = {\n  'Content-Type': 'text/csv; charset=utf-8',\n  'Content-Disposition': 'attachment; filename=\"' + (msg.downloadFilename || 'esc1_recursos.csv') + '\"'\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 2840,
+        "wires": [["http_resp_csv_export"]]
+    },
+    {
+        "id": "http_resp_csv_export",
+        "type": "http response",
+        "z": "3224d6c38c360858",
+        "name": "HTTP CSV Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 1080,
+        "y": 2840,
+        "wires": []
+    },
+    {
+        "id": "inj_internet_badge_poll",
+        "type": "inject",
+        "z": "3224d6c38c360858",
+        "name": "Poll estado internet",
+        "props": [{"p": "payload"}],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 2920,
+        "wires": [["func_internet_badge"]]
+    },
+    {
+        "id": "func_internet_badge",
+        "type": "function",
+        "z": "3224d6c38c360858",
+        "name": "Estado Internet Badge",
+        "func": "var habilitado = global.get('esc1_internet_enabled');\nmsg.payload = { habilitado: habilitado === true };\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 2920,
+        "wires": [["tpl_internet_badge"]]
+    },
+    {
+        "id": "tpl_internet_badge",
+        "type": "ui_template",
+        "z": "3224d6c38c360858",
+        "group": "group_config",
+        "name": "Indicador Internet",
+        "order": 4,
+        "width": "6",
+        "height": 2,
+        "format": "<div style=\"padding:4px 0;\"><div ng-if=\"msg && msg.payload !== undefined\" style=\"padding:12px 16px; border-radius:8px; font-weight:700; font-size:15px; text-align:center;\" ng-style=\"{'background': msg.payload.habilitado ? '#c8e6c9' : '#ffcdd2', 'color': msg.payload.habilitado ? '#1b5e20' : '#b71c1c', 'border': '2px solid ' + (msg.payload.habilitado ? '#4caf50' : '#f44336')}\">{{ msg.payload.habilitado ? '\\u2714 INTERNET HABILITADO' : '\\u2718 INTERNET BLOQUEADO' }}</div><div ng-if=\"!msg || msg.payload === undefined\" style=\"color:#999; text-align:center; padding:12px; font-size:13px;\">Actualizando\u2026</div></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 680,
+        "y": 2920,
+        "wires": [[]]
+    },
+    {
+        "id": "tpl_export_recursos",
+        "type": "ui_template",
+        "z": "3224d6c38c360858",
+        "group": "8b0aa622293c9d33",
+        "name": "Exportar Rendimiento",
+        "order": 3,
+        "width": "14",
+        "height": 2,
+        "format": "<div style=\"display:flex; align-items:center; gap:16px; padding:8px 0; flex-wrap:wrap;\"><span style=\"font-size:13px; color:#555;\">Historial de CPU y RAM del router (un punto cada 30s, se reinicia al relanzar el contenedor):</span><a href=\"/esc1/export-resources\" download style=\"display:inline-block; background:#1565c0; color:#fff; padding:10px 20px; border-radius:6px; text-decoration:none; font-weight:700; font-size:13px;\">\u2b07 Descargar CSV</a></div>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 200,
+        "y": 3000,
+        "wires": [[]]
+    }
+]

@@ -1,0 +1,18 @@
+services:
+  esc1-nodered:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: esc1-nodered
+    restart: unless-stopped
+    network_mode: host
+    cap_add:
+      - NET_RAW
+      - NET_ADMIN
+    command: ["node-red", "--userDir", "/data", "flows.json", "-p", "1881"]
+    environment:
+      FLOWS: /data/flows.json
+      NODE_RED_ENABLE_PROJECTS: "false"
+      DASH_PORT: "1881"
+    volumes:
+      - ./:/data
