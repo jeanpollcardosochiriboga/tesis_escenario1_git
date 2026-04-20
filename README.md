@@ -66,7 +66,7 @@ docker-compose.yml
 ├── flows.json         → Lógica backend (Node-RED) — no editar a mano
 ├── settings.js        → Configuración de Node-RED
 ├── public/
-│   ├── images/        → Iconos de dispositivos y QR codes
+│   ├── images/        → Iconos de dispositivos
 │   └── js/
 │       └── d3.v7.min.js
 └── scripts/
