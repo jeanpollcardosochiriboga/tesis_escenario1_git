@@ -627,7 +627,7 @@
     "type": "function",
     "z": "3224d6c38c360858",
     "name": "Crear URL Dinámica",
-    "func": "// 1. Limpiamos la IP\nvar myIP = (msg.payload || \"\").toString().trim();\n\n// VALIDACION DE SEGURIDAD\nif (!myIP || myIP.length < 7) {\n    // Usamos tu IP actual\n    myIP = env.get('DASH_IP') || \"192.168.1.217\";\n}\n\n// 2. Puerto configurable por entorno\n// NOTA: Como vi que en tu mensaje anterior usabas el puerto 1881, \n// lo pongo como valor por defecto en caso de que la variable falle.\nvar dashPort = (env.get(\"DASH_PORT\") || \"1881\").toString().trim();\nif (!dashPort) dashPort = \"1881\";\n\n// 3. LA MAGIA: URL directa a la nueva página móvil\nvar url = \"http://\" + myIP + \":\" + dashPort + \"/registro\";\n\n// 4. Enviamos al código QR\nmsg.payload = url;\nreturn msg;",
+    "func": "// 1. IP del servidor: se detecta automáticamente con hostname -I\nvar myIP = (msg.payload || '').toString().trim();\n\n// 2. Fallback: variable de entorno DASH_IP\nif (!myIP || myIP.length < 7) {\n    myIP = env.get('DASH_IP') || '';\n}\n\n// 3. Si no hay IP disponible, no generar QR incorrecto\nif (!myIP) {\n    node.warn('QR Dashboard: hostname -I no devolvió IP y DASH_IP no está configurado en .env');\n    return null;\n}\n\n// 4. Puerto\nvar dashPort = (env.get('DASH_PORT') || '1881').toString().trim();\nif (!dashPort) dashPort = '1881';\n\n// 5. URL final\nvar url = 'http://' + myIP + ':' + dashPort + '/registro';\nmsg.payload = url;\nreturn msg;",
     "outputs": 1,
     "timeout": "",
     "noerr": 0,

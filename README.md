@@ -90,18 +90,15 @@ Luego aplica el cambio desde el dashboard o re-ejecuta el script SSH correspondi
 
 ## Código QR del dashboard
 
-`public/images/dashboard_qr.png` y `wifi_qr.png` son imágenes pre-generadas para el laboratorio de la EPN. En una nueva instalación deben regenerarse:
+El QR del dashboard se genera **automáticamente en runtime**:
 
-- **dashboard_qr.png:** genera un QR con la URL de tu dashboard (`http://TU_IP:1881`)
-- **wifi_qr.png:** genera un QR con las credenciales WiFi de tu red de laboratorio
+1. Node-RED ejecuta `hostname -I` para detectar la IP real del servidor.
+2. Si la detección falla, usa `DASH_IP` del archivo `.env`.
+3. Si ninguna está disponible, el QR no se muestra y queda un aviso en los logs.
 
-Puedes usar cualquier generador de QR online o la librería `qrcode` de Python:
-```bash
-pip install qrcode[pil]
-python3 -c "import qrcode; qrcode.make('http://192.168.X.X:1881').save('dashboard_qr.png')"
-```
+No es necesario generar ni reemplazar ninguna imagen PNG. Con solo tener `DASH_IP` en `.env` y correr `docker-compose up -d`, el QR apunta a la instalación correcta.
 
-Reemplaza los archivos en `public/images/` y reconstruye la imagen Docker.
+El QR WiFi también es dinámico: el operador escribe el nombre de la red (SSID) en el formulario del dashboard y el QR se genera al instante.
 
 ## Cómo modificar el flujo (Node-RED)
 
