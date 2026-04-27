@@ -6,3 +6,4 @@ node_modules/
 flows_cred.json
 resource_log.csv
 scripts/backups/
+.env
