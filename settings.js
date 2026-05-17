@@ -20,7 +20,13 @@
  *
  **/
 
+// §4 metrics — backend latency middleware (see metrics_middleware.js)
+const metricsMW = require('./metrics_middleware');
+
 module.exports = {
+
+    httpNodeMiddleware: metricsMW,
+
 
 /*******************************************************************************
  * Flow File and User Directory Settings
